@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+  <meta name="description" content="IP Catcher is the informational website for everyone! ">
+  <meta name="keywords" content="Information,Helpful,IP, IP address,Date,Time,Games">
+  <meta name="author" content="Jonn Williams">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="light.png"/>
+<meta name="revisit-after" content="2 days">
+<meta name="robots" content="follow">
+    
+   
+   
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#ipp {
+    color: red;
+    font-size:;
+    
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+
+   
+}
+a {
+    font-size: 17px;
+    
+    
+    
+    
+    
+    
+}
+
+
+.header h1 {
+  font-size: 50px;
+  
+
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: visible;
+  margin:-18px;
+  background-color: #333;
+  height:80px;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  width:100px;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: center;
+  margin:auto;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #ffffff;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  text-align:center;
+  width:max-width;
+  height:max-height;
+  margin-top: 40px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+.butt
+ {
+color:#21aade;
+    
+}
+
+.meow {
+    font-size:200px;
+    
+    
+}
+
+.kitty {
+    font-size:25px;
+    
+    
+    
+}
+
+
+.cat {
+ font-family: 'Courier New', monospace;
+ 
+ #gc {
+    overflow: hidden;
+    
+}
+    
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body onload="checkscore()">
+
+
+
+<div class="topnav">
+  <a href="index.html" class="kitty" ><b>Home</b></a>
+  <a href="ip.html" class="kitty"  ><b >IP Catcher</b></a>
+  <a href="time.html" class="kitty" ><b>Time</b></a>
+  <a href="w.html" class="kitty"  ><b>Weather</b></a>
+  <a href="date.html" class="kitty" ><b>Date</b></a>
+  <a href="" class="kitty" id="ipp"><b>Games</b></a>
+</div>
+
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+    <h2 id="space">Press Space to Stop the Game</h2>
+    <h3 id="score"></h3>
+        
+   <canvas id="gc" width="400" height="400"></canvas>
+<script>
+var score = 0;
+window.onload=function() {
+    canv=document.getElementById("gc");
+    ctx=canv.getContext("2d");
+    document.addEventListener("keydown",keyPush);
+    setInterval(game,1000/15);
+}
+px=py=5;
+gs=tc=20;
+ax=ay=15;
+xv=yv=0;
+trail=[];
+tail = 5;
+function game() {
+    px+=xv;
+    py+=yv;
+    if(px<0) {
+        px= tc-1;
+    }
+    if(px>tc-1) {
+        px= 0;
+    }
+    if(py<0) {
+        py= tc-1;
+    }
+    if(py>tc-1) {
+        py= 0;
+    }
+    ctx.fillStyle="purple";
+    ctx.fillRect(0,0,canv.width,canv.height);
+ 
+    ctx.fillStyle="lime";
+    for(var i=0;i<trail.length;i++) {
+        ctx.fillRect(trail[i].x*gs,trail[i].y*gs,gs-2,gs-2);
+        if(trail[i].x==px && trail[i].y==py) {
+            tail = 5;
+        }
+    }
+    trail.push({x:px,y:py});
+    while(trail.length>tail) {
+    trail.shift();
+    }
+ 
+    if(ax==px && ay==py) {
+        tail++;
+        ax=Math.floor(Math.random()*tc);
+        ay=Math.floor(Math.random()*tc);
+    }
+    ctx.fillStyle="red";
+    ctx.fillRect(ax*gs,ay*gs,gs-2,gs-2);
+}
+    function checkscore() {
+        text = tail - 5
+    }
+
+
+    
+
+
+function keyPush(evt) {
+    switch(evt.keyCode) {
+        case 37:
+            xv=-1;yv=0;
+            break;
+        case 38:
+            xv=0;yv=-1;
+            break;
+        case 39:
+            xv=1;yv=0;
+            break;
+        case 40:
+            xv=0;yv=1;
+            break;
+        case 65:
+            xv=-1;yv=0;
+            break;
+        case 51:
+            tail = 50
+            
+        case 90:
+            xv=-0.5;yv=+0.5;
+            break;
+         case 81:
+            xv=-0.5;yv=-0.5;
+            break;
+        case 87:
+            xv=0;yv=-1;
+            break;
+        case 69:
+            xv=0.5;yv=-0.5;
+            break;
+        case 67:
+            xv=0.5;yv=0.5;
+            break;
+        case 68:
+            xv=1;yv=0;
+            break;
+        case 83:
+            xv=0;yv=1;
+            break;
+        case 32:
+            xv=0;yv=0;
+            break;
+    }
+}
+</script>
+
+
+
+
+    
+    
+    
+  <title>Snake</title>
+    
+   
+
+
+
+
+    
+    
+    
+
+
+
+
+</body>
+</html>
+
+
+
