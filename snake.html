@@ -405,7 +405,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
   let fadeSpeed = 5000; // milliseconds it takes the grid to disappear (initially)
   let fadeExponential = 1.024; // after each score it will gradually take more time for the grid to fade
   const contrastIncrease = 0.5; // contrast you gain after each score
-  const color = "red"; // Primary color
+  const color = "black"; // Primary color
 
 
   // Setup: Build up the grid
@@ -441,7 +441,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
   function resetGame() {
     // Reset positions
     snakePositions = [168, 169, 170, 171];
-    applePosition = 100; // Initially the apple is always at the same position to make sure it's reachable
+    applePosition = 120; // Initially the apple is always at the same position to make sure it's reachable
     
     // Reset game progress
     startTimestamp = undefined;
