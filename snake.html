@@ -516,9 +516,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
     if (event.key == "H" || event.key == "h") {
       hardMode = true;
       speed = 60;
-       score = 0;
-       document.getElementById("score") = 0;
-      
+      resetGame();
       return;
     }
 
