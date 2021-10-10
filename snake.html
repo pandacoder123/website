@@ -444,7 +444,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
   function resetGame() {
     // Reset positions
     snakePositions = [168, 169, 170, 171];
-    applePosition = 100; // Initially the apple is always at the same position to make sure it's reachable
+    applePosition = newPosition; // Initially the apple is always at the same position to make sure it's reachable
     
     // Reset game progress
     startTimestamp = undefined;
@@ -646,11 +646,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
       const changeMode = hardMode
         ? "Back to easy mode? Press the letter E."
         : "Ready for hard more? Press the letter H.";
-      const followMe =
-        'Follow me <a href="https://twitter.com/HunorBorbely" , target="_blank">@HunorBorbely</a>';
-      noteElement.innerHTML = `${error.message}. ${pressSpaceToStart} <div>${changeMode}</div> ${followMe}`;
-      noteElement.style.opacity = 1;
-      containerElement.style.opacity = 1;
+
     }
 
     lastTimestamp = timestamp;
