@@ -639,7 +639,12 @@ window.addEventListener("DOMContentLoaded", function (event) {
         contrast = Math.max(0, contrast - contrastDecrease);
       }
 
-
+function addNewApple() {
+    // Find a position for the new apple that is not yet taken by the snake
+    let newPosition;
+    do {
+      newPosition = Math.floor(Math.random() * width * height);
+    } while (snakePositions.includes(newPosition));
 
       window.requestAnimationFrame(main);
     } catch (error) {
@@ -712,12 +717,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
           "background-color": color
         });
     }
-function addNewApple() {
-    // Find a position for the new apple that is not yet taken by the snake
-    let newPosition;
-    do {
-      newPosition = Math.floor(Math.random() * width * height);
-    } while (snakePositions.includes(newPosition));
+
     // Set previous head to full size
     const previousHead = tiles[snakePositions[snakePositions.length - 2]];
     setTile(previousHead, { "background-color": color });
