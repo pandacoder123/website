@@ -383,6 +383,13 @@ window.addEventListener("DOMContentLoaded", function (event) {
   window.focus(); // Capture keys right away (by default focus is on editor)
 
   // Game data
+     function addNewApple() {
+    // Find a position for the new apple that is not yet taken by the snake
+    let newPosition;
+    do {
+      newPosition = Math.floor(Math.random() * width * height);
+    } while (snakePositions.includes(newPosition));
+
   let snakePositions; // An array of snake positions, starting head first
   let applePosition; // The position of the apple
 
@@ -838,13 +845,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
   }
 
   // Generates a new apple on the field
-  function addNewApple() {
-    // Find a position for the new apple that is not yet taken by the snake
-    let newPosition;
-    do {
-      newPosition = Math.floor(Math.random() * width * height);
-    } while (snakePositions.includes(newPosition));
-
+ 
     // Set new apple
     setTile(tiles[newPosition], {
       "background-color": color,
