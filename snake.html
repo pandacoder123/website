@@ -440,8 +440,8 @@ window.addEventListener("DOMContentLoaded", function (event) {
   // Resets game variables and layouts but does not start the game (game starts on keypress)
   function resetGame() {
     // Reset positions
-    snakePositions = [168, 169, 170, 171];
-    applePosition = 100; // Initially the apple is always at the same position to make sure it's reachable
+    snakePositions = Math.floor((Math.random() * 150) + 75);;
+    applePosition =  Math.floor((Math.random() * 150) + 75); // Initially the apple is always at the same position to make sure it's reachable
     
     // Reset game progress
     startTimestamp = undefined;
@@ -517,17 +517,18 @@ window.addEventListener("DOMContentLoaded", function (event) {
       hardMode = true;
       speed = 60;
       resetGame();
+      startGame();
       
       return;
     }
 
     // Set Easy mode
     if (event.key == "E" || event.key == "e") {
-      hardMode = false;
+     hardMode = false;
+      easyMode = true;
       speed = 125;
-      noteElement.innerHTML = `Easy mode. Press space to start!`;
-      noteElement.style.opacity = 1;
       resetGame();
+      if (!gameStarted) startGame();
       return;
     }
 
