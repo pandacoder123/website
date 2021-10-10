@@ -517,17 +517,17 @@ window.addEventListener("DOMContentLoaded", function (event) {
       hardMode = true;
       speed = 60;
       resetGame();
-      
+      if (!gameStarted) startGame();
       return;
     }
 
     // Set Easy mode
     if (event.key == "E" || event.key == "e") {
-      hardMode = false;
+       hardMode = false;
+      easyMode = true;
       speed = 125;
-      noteElement.innerHTML = `Easy mode. Press space to start!`;
-      noteElement.style.opacity = 1;
       resetGame();
+      if (!gameStarted) startGame();
       return;
     }
 
