@@ -440,7 +440,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
   // Resets game variables and layouts but does not start the game (game starts on keypress)
   function resetGame() {
     // Reset positions
-    snakePositions = Math.floor((Math.random() * 150) + 75);;
+    snakePositions = [175, 180, 150, 125];
     applePosition =  Math.floor((Math.random() * 150) + 75); // Initially the apple is always at the same position to make sure it's reachable
     
     // Reset game progress
