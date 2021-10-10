@@ -643,12 +643,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
       const changeMode = hardMode
         ? "Back to easy mode? Press the letter E."
         : "Ready for hard more? Press the letter H.";
-      const followMe =
-        'Follow me <a href="https://twitter.com/HunorBorbely" , target="_blank">@HunorBorbely</a>';
-      noteElement.innerHTML = `${error.message}. ${pressSpaceToStart} <div>${changeMode}</div> ${followMe}`;
-      noteElement.style.opacity = 1;
-      containerElement.style.opacity = 1;
-    }
+      
 
     lastTimestamp = timestamp;
   }
