@@ -395,7 +395,9 @@ window.addEventListener("DOMContentLoaded", function (event) {
   let inputs; // A list of directions the snake still has to take in order
 
   let gameStarted = false;
+  let normalMode = true;
   let hardMode = false;
+  let easyMode = false;
 
   // Configuration
   const width = 15; // Grid width
@@ -406,6 +408,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
   let fadeExponential = 1.024; // after each score it will gradually take more time for the grid to fade
   const contrastIncrease = 0.5; // contrast you gain after each score
   const color = "black"; // Primary color
+  const red = "red";
 
 
   // Setup: Build up the grid
@@ -462,7 +465,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
 
     // Render apple
     setTile(tiles[applePosition], {
-      "background-color": color,
+      "background-color": red,
       "border-radius": "50%"
     });
 
@@ -524,10 +527,10 @@ window.addEventListener("DOMContentLoaded", function (event) {
     // Set Easy mode
     if (event.key == "E" || event.key == "e") {
       hardMode = false;
+      easyMode = true;
       speed = 125;
-      noteElement.innerHTML = `Easy mode. Press space to start!`;
-      noteElement.style.opacity = 1;
       resetGame();
+      if (!gameStarted) startGame();
       return;
     }
 
