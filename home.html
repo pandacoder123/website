@@ -252,7 +252,33 @@ color:#21aade;
     Left:50%;
     transform: translateX(-50%) translateY(-50%);
 }
-
+.wrapper{
+    position:absolute;
+    top:100px;
+    left:50%;
+    border:1px solid #ddd;
+    display:flex;
+    overflow-x:auto;
+    
+    }
+    
+    .wrapper::-webkit-scrollbar{
+    width: 0;
+    }   
+    
+    .wrapper .item{
+    min-width:110px;
+    height:110px;
+    line-height:110px;
+    text-align: center;
+    background-color: #ddd;
+    margin-right:2px;
+    
+    
+    }
+    
+    
+    
 .mouse{
     
     position: -webkit-sticky; /* Safari */
@@ -351,6 +377,13 @@ color:#21aade;
   <a href="date.html" class="kitty" id="date=" ><b>Date</b></a>
   <a href="game.html" class="kitty"  ><b>Game Center</b></a>
   
+    <div class="wrapper">
+        <div class="item">box-1</div>
+         <div class="item">box-1</div>
+         <div class="item">box-1</div>
+         <div class="item">box-1</div>
+         <div class="item">box-1</div>
+    </div>
 </div>
 </div>
 
