@@ -15,10 +15,6 @@
   
 <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Poppins">
-    
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>    
     
     <body>
@@ -54,15 +50,23 @@ body {
 
    
 }
-
+a {
+    font-size: 17px;
     
+    
+    
+    
+    
+    
+}
+
 
 
 /* Style the top navigation bar */
 .topnav {
   overflow: visible;
   margin:-18px;
-  background-image: url("sand.png");
+  background-image: url("websitebackground.jpg");
   background-repeat: no-repeat;
   background-size:100% 100%;
   background-position:center top;
@@ -122,12 +126,12 @@ body {
 
 /* Add a card effect for articles */
 .cardd {
-  background-color:#e2eefc;
+  background-color:transparent;
   padding: 50px;
-  border:4px solid lightgreen;
+  border:2px solid blue;
   text-align:center;
-  width:99%;
-  height:3000px;
+  width:;
+  height:600px;
   margin-top: 30px;
   position:absolute;
   left:6px;
@@ -195,7 +199,7 @@ color:#21aade;
      display:inline-block;
   margin-left: auto;
   margin-right: auto;
-  font-family: "Popins", "sans-serif";
+  font-family: "Popins", "mono";
   font-size:20px;
   
     
@@ -215,10 +219,6 @@ color:#21aade;
     
 }
 
-    a {
-    font-size:17px;
-    }
-    
 
 .cat {
  font-family: 'Courier New', monospace;
@@ -299,13 +299,13 @@ color:#21aade;
     #textt {
     position:absolute;
     bottom: 150px;
-    left: 25%;
+    left: 6%;
     text-align:center;
-    font-size:23px;
-    width: 150px;
+    font-size:20px;
+        width:900px;
+   
         background-color:transparent;
-        color:white;
-        font-family: 'Roboto', sans-serif;
+        color:black;
     
     }
     
@@ -323,8 +323,8 @@ color:#21aade;
         position:absolute;
         border-radius:25px;
         top:300px;
-        left:40%;
-    width: 300px;
+        left:3%;
+    width: 90%;
         height:500px;
   border: 4px solid green;
   padding: 50px;
@@ -335,9 +335,9 @@ color:#21aade;
     
     }
     
-    #car:hover {
+/*     #car:hover {
     width:340px;
-    height:540px;
+    height:540px; */
        
         
         
@@ -345,20 +345,6 @@ color:#21aade;
          
         
         
-    }
-    
-    #car:hover > #imgg {
-    width:300px;
-    height:240px;
-    transition:width 2s, height 2s;
-    
-    }
-    
-    #car:not(:hover) > #imgg {
-    width:260px;
-    height:200px;
-        transition:width 2s, height 2s;
-    
     }
     
        #imgg {
@@ -372,7 +358,7 @@ color:#21aade;
         position:absolute;
         border-radius:25px;
         top:300px;
-        left:12%;
+        left:4%;
     width: 300px;
         height:500px;
   border: 4px solid green;
@@ -387,7 +373,7 @@ color:#21aade;
     #carr:hover {
     width:340px;
     height:540px;
-        
+    -webkit-transform:scale(1.5);     
         
         
         
@@ -402,26 +388,12 @@ color:#21aade;
     top:10px;
            
     }
-    
-    #carr:hover > #imggg {
-    width:300px;
-    height:240px;
-    transition:width 2s, height 2s;
-    
-    }
-    
-    #carr:not(:hover) > #imggg {
-    width:260px;
-    height:200px;
-        transition:width 2s, height 2s;
-    
-    }
     /*END OF LEFT CARD*/
         #carrr {
         position:absolute;
         border-radius:25px;
         top:300px;
-        left:67%;
+        left:70%;
     width: 300px;
         height:500px;
   border: 4px solid green;
@@ -450,19 +422,6 @@ color:#21aade;
     left:20px;
     top:10px;
            
-    }
-    #carrr:hover > #imgggg {
-    width:300px;
-    height:240px;
-    transition:width 2s, height 2s;
-    
-    }
-    
-    #carrr:not(:hover) > #imgggg {
-    width:260px;
-    height:200px;
-        transition:width 2s, height 2s;
-    
     }
     /*END OF RGHT CARD*/
 /*     #carr {
@@ -556,14 +515,8 @@ color:#21aade;
 }
 
 #light {
-    font-family: 'Roboto', sans-serif;
-    font-size:30px;
-    color:white;
     float:left;
 }
-    #light:hover {
-    color: black;
-    }
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #ffffff}
@@ -581,7 +534,7 @@ color:#21aade;
     
 }
     .cards:hover {
-    background-color:#f27a65;
+    background-color:transparent;
         color:white;
     
     }
@@ -592,11 +545,6 @@ color:#21aade;
     bottom:130px;
     left:550px;
 }
-    
-    #textr {
-    position:absolute;
-    bottom:20px;
-    }
 
     #about {
     color:white;
@@ -604,6 +552,7 @@ color:#21aade;
     position:absolute;
     top:0.5%;
     right:16%;
+        padding:4px;
     }
     
     #util {
@@ -612,7 +561,7 @@ color:#21aade;
     position:absolute;
     top:0.8%;
     right:2%;
-       
+        padding:4px;
     }    
     
       #games {
@@ -621,10 +570,8 @@ color:#21aade;
     position:absolute;
     top:0.8%;
     right:9%;
-          
+          padding:4px;
     }    
-        
-    
     #about:hover {
     background-color:transparent;
     color:black;
@@ -639,24 +586,14 @@ color:#21aade;
     background-color:transparent;
     color:black;
     }
-    #thick {
-    font-family: 'Roboto', sans-serif;
-    position:absolute;
-    bottom:1.7%;
-    left:4%;
-        color:white;
-        font-size:100px;
-        z-index:5;
-    }
     
-    
-    #sub{
-    font-family: 'Roboto', sans-serif;
+    #titlee {
     position:absolute;
-    bottom:20%;
-    left:15%;
-        color:white;
-        font-size:75px;
+    top:60%;
+    left:45%;
+    font-size:20px;
+        
+       
     }
     
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
@@ -676,20 +613,21 @@ color:#21aade;
 
 <div class="topnav">
   
-  <a href="home.html" id="light"><b>Information4u</b></a>
+<a href="home.html" id="light"><b>Information4u</b></a>
   <a href="aboutus.html" id="about"  ><b >About Us</b></a>
   <a href="gamecenter" id="games" ><b>Games</b></a>
   <a href="util.html" id="util"  ><b>Utilities</b></a>
-    <h1 id="thick"></h1>
-    <h4 id="sub"></h4>
-  
-    
-    
+ 
     <div id="car"><img id="imgg"src="websitebackground.jpg" width=260px; height=200px;/><a href="gamecenter.html" id="textt">Games to Cure your Boredom</a></div>
     <div id="carr"><img id="imggg"src="websitebackground.jpg" width=260px; height=200px;/><a href="aboutus.html" id="textt">About us</a></div>
     <div id="carrr"><img id="imgggg"src="websitebackground.jpg" width=260px; height=200px;/><a href="util.html" id="textt">Utilities</a></div>
 </div>
-
+    
+<!--     <div id="car"><img id="imgg"src="websitebackground.jpg" width=260px; height=200px;><a href="home.html" id="textt">Games to Cure your Boredom</a></div>
+    <div id="carr"><img id="imggg"src="websitebackground.jpg" width=260px; height=200px;><a href="home.html" id="textt">Games to Cure your Boredom</a></div>
+    <div id="carrr"><img id="imgggg"src="websitebackground.jpg" width=260px; height=200px;><a href="home.html" id="textt">Games to Cure your Boredom</a></div> -->
+</div>
+</div>
 
 
 <script>function myFunction() {
@@ -711,32 +649,8 @@ window.onclick = function(event) {
 }</script>
 
 
-<!-- <div class="row">
-  <div class="leftcolumn">
-    <div class="cardd">
-        
-   
 
-<h1 class="mouse">InfoandFun4u: About the Informational and Fun Website</h1>
-<p  class="description" >  InfoandFun4u is an informational and fun website for all!If you are in school this website can help you find the date and time. On InfoandFun4u you can find
-your IP address,the weather, date, and even classic and fun games like 2048, Cookie clicker, and the snake game. These games can cure your boredom and pass time(you can find the games by going to the bottom of the page and clicking the link).This site is also perfect for getting information on the go! Remember that this site is still in devolopment and there is a few bugs on the site. </p>
-<p>           </p><p class="description">
-    If you have any problems with the site please reach out to us so we can fix the problem. Also if you have any ideas for what to add to this site please email us at ipcatcherbusiness@gmail.com. It might take around 50 hours before a reply. This is because currently this website is only run of 2 people. So be patient while you wait for us to reply to you.In the mean time you can play one of our games.Also if you know web devolopment (HTML,JS,CSS) you can send some code over email to have a chance to be put on InfoandFun4u. Please tell your friends about amazing site and thank you for reading this i hope you have a wonderful day and i hope you enjoy your time my the site!</p>
-   <a href="https://freetools.seobility.net/en/seocheck/information4u.net"><img src="https://freetools.seobility.net/widget/widget.png?url=information4u.net" alt="Seobility Score für information4u.net"></a>
-     <iframe
-   width="97%"
-   height="35%"
-   id="map"
-   src="https://maps.google.co.uk/maps?q=san+fransico&amp;output=embed"
-   
-   ></iframe>
-  <p id="area">My Area</p>
-
-
-</div>
-</div>
-</div> -->
-
+    
     
     
     
@@ -756,6 +670,5 @@ your IP address,the weather, date, and even classic and fun games like 2048, Coo
 
 </body>
 </html>
-
 
 
