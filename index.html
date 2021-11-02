@@ -366,6 +366,10 @@ margin-right:18px;
 
     
 }
+    .items {
+    text-decoration:none;
+    
+    }
 #area {
     position:absolute;
     bottom:130px;
@@ -389,32 +393,16 @@ margin-right:18px;
 
 <div class="topnav">
  
-  <a href="index.html" id="light"class="kitty"><img src="light.png" alt="Light" width="45" height="45"></a>
+  <a href="index.html" id="light"class="kitty">Information4u</a>
 
   
 </div>
 
-  <a href="aboutus.html" id="about"  ><b >About Us</b></a>
-  <a href="gamecenter" id="games" ><b>Games</b></a>
-  <a href="util.html" id="util"  ><b>Utilities</b></a>
+  <a href="aboutus.html" id="about" class="items"  ><b >About Us</b></a>
+  <a href="gamecenter" id="games" class="items>"<b>Games</b></a>
+  <a href="util.html" id="util"  class="items"><b>Utilities</b></a>
 
-<script>function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
 
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}</script>
 
 
 <div class="
