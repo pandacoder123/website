@@ -545,7 +545,7 @@ margin-right:18px;
         <div id="welcome">
             <div id="welcome-title"><h1>Welcome to Information4u</h1></div>
             <div id="welcome-body"><p>Information4u is an informational and fun website for all! On Information4u you can acess many different games and utilites.</p></div>
-            <div id="welcome-buttons"> <button id="about-button">About</button>  <button id="games-button">Games</button>  <button id="utilities-button">Utilities</button></div>
+            <div id="welcome-buttons"> <button id="about-button" href="#2" >About</button>  <button id="games-button">Games</button>  <button id="utilities-button">Utilities</button></div>
         </div>
 <div data-aos="fade-right"
      
@@ -597,7 +597,43 @@ your IP address,the weather, date, and even classic and fun games like 2048, Coo
 </div>
  
 --->
-    
+    <script>// Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+        </script>
     
 
     
