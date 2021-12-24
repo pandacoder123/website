@@ -1047,12 +1047,21 @@ right:26%;
     }
 
     
-    
+    #snakeimg {
+      width:100%;
+      height: 580px;
+
+
+
+    }
+
+
     #Title { 
 position:absolute;
     top:20px;
     right:41.5%;
     font-size:40px;
+    text-decoration: none;
      } 
 </style>
 
@@ -1067,21 +1076,20 @@ position:absolute;
   
 </div>
 
-    <a id="Title">Game Center</a>
+    <a id="Title" href="games-page.html">Game Center</a>
     <a href="aboutus.html" id="about" class="items"  ><b >About Us</b></a>
   <a href="gamecenter.html" id="game" class="items"><b>Games</b></a>
    <a href="util.html" id="util"  class="items"><b>Utilities</b></a>
         
-        <div id="games-icons">
+        <div id="games-icons" >
                 <div class="games-buttons" id="snake-icon">
                     <p>Snake</p>
-                    <img src="Screenshot 2021-12-20 1.36.14 PM.png" width="100px" height="100px">
+                    <a href="snake-page.html"><img src="Screenshot 2021-12-20 1.36.14 PM.png" width="100px" height="100px"></a>
                     <p width="100px">Snake is a classic in the game industry! To gain points you move your snake to collect sqaures.Earn points and try to beat your high score.</p>
             </div>
             
-            <div class="games-buttons" id="two-icon"><p>2048</p>
-            <img src="Screenshot 2021-12-20 1.00.08 PM.png" width="100px" height="150px">
-                <p width="100px">2048 is a great game to pass time and exercise your mind. You can score points by merging cubes.</p>
+            <div class="games-buttons" id="two-icon" ><p>2048</p>
+            <a href="index.html"><img src="Screenshot 2021-12-20 1.00.08 PM.png" width="100px" height="150px"></a>               <p width="100px">2048 is a great game to pass time and exercise your mind. You can score points by merging cubes.</p>
             </div>
             
             
@@ -1104,7 +1112,7 @@ position:absolute;
 
         <div class="slideshow-container">
 
-          <a href="index.html"><div class="mySlides fade">
+          <a href="snake-page.html"><div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
             <img src="snakeheader.jpg" class="imd" style="width:100%">
             <h2 class="text"></h2>
@@ -1112,7 +1120,7 @@ position:absolute;
           
           <div class="mySlides fade">
             <div class="numbertext">2 / 3</div>
-            <img src="2048header.jpg" class="imd" style="width:100%; height:80%;">
+            <img src="2048header.jpg" class="imd" id="snakeimg">
             <div class="text"></div>
           </div>
           
