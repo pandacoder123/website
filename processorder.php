@@ -24,7 +24,7 @@ $date = date('H:i, jS F Y');
       
       define('TIREPRICE', 100);
       define('OILPRICE', 12);
-      define('SPARKPRICE, 5);
+      define('SPARKPRICE', 5);
       
       $totalqty = $tireqty + $oilqty + $sparkqty;
       echo "<p>Items ordered: ".$totalqty."<br />";
@@ -57,6 +57,24 @@ $date = date('H:i, jS F Y');
         $outputstring = $date."/t".$tireqty." tires /t".$oilqty." oil/t"
                         .$sparkqty." spark plugs/t/$".$totalamount
                         ."/t". $address."/n";
+      
+      @$fp = fopen("$document_root/../orders/orders.txt", 'ab');
+      
+      if (!$fp) {
+        echo "<p><strong> Your order could not be proceesed at this time. Please tray again later.</strong></p>";
+        
+        exit;
+      
+      }
+      
+      flock($fp, LOCK_EX);
+      fwrite($fp, $outputstring, strlen($outputstring));
+      flock($fp, LOCK_UN);
+      
+      echo "<p>Order written.</p>";
+    ?>
+      </body>
+</html>
         
           
       
