@@ -73,8 +73,8 @@ $date = date('H:i, jS F Y');
       
       echo "<p>Order written.</p>";
     ?>
-      </body>
-</html>
+      </body>     
+  </html>
         
           
       
@@ -82,5 +82,5 @@ $date = date('H:i, jS F Y');
   
   
   
-  </body>
+
 
