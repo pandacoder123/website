@@ -848,12 +848,15 @@ margin-right:18px;
     
     }
     
-    #cookie {
+   #cookie {
     position:fixed;
     bottom:0;
     right:0;
     left:0;
     height:4%;
+    background-color:gray;
+    text-align:center;
+    font-family:Roboto;
     
     
     }
@@ -907,7 +910,18 @@ margin-right:18px;
             <div id="util-buttons"> <a class="buttons"  id="about-button" href="#about-title" >About</a>  <a class="buttons"   id="games-button" href="#game-title">Games</a>  <a class="buttons"  id="utilities-button" href="#util-title">Utilities</a><a class="buttons" id="utilities-button" href="util-center.html">Access Utilites!</a></div>
         </div>
         
-        <div id="cookie">By going on to this website you agree to the cookie policy. Please Read our policy here <a href="cookie.pdf">cookie policy</a></div>
+        <div id="cookie">By pressing accept you agree to the cookie policy. Read our cookie policy here <a href="cookie.pdf">cookie policy</a>.<button onclick="hideElement()">
+            Accept
+    </button></div>
+        
+        <script>
+function hideElement() {
+            element = document.querySelector('#cookie');
+            element.style.visibility = 'hidden';
+        }
+
+</script>
+
         
         <div id="anchorad">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6748383947326676"
