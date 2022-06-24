@@ -51,6 +51,7 @@
               score = score - grandmacost;
               grandma += 1;
               grandmacost = Math.round(grandmacost * 1.15)
+              incriment += 500;
               
               
               document.getElementById("score1").innerHTML = score;
@@ -70,6 +71,7 @@
                   score = score - 15;
                   cursorCost = Math.round(cursorCost * 1.15);
                   cursor = cursor + 1;
+                  incriment += 500;
                   
                   
                   document.getElementById("score1").innerHTML = score;
