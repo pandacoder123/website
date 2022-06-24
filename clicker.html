@@ -89,9 +89,16 @@ tr:nth-child(even) {
     
   </tr>
   <tr>
-      <td><p>Grandma</p><button id="grandmacost" class="center2" > </span >$500</span></button></td>
+      <td><p>Grandma</p><button id="grandmacost" class="center2" > </span >$50</span></button></td>
     <td><span id="grandmas">0</span></td>
-    <td>grandma X 5</td>
+    <td>+5</td>
+    
+  </tr>
+
+ <tr>
+      <td><p>Baker</p><button id="bakercost" class="center2" > </span >$250</span></button></td>
+    <td><span id="baker">0</span></td>
+    <td>+20</td>
     
   </tr>
  
@@ -107,8 +114,10 @@ tr:nth-child(even) {
           let cursorCost = 15;
           let cursor = 0;
           let incriment = 1;
-          let grandmacost = 500;
+          let grandmacost = 50;
           let grandma = 0;
+          let baker = 0;
+          let bakercost = 250;
           
         
           
@@ -155,6 +164,25 @@ tr:nth-child(even) {
         
          
         });  
+    
+     document.getElementById("bakercost").addEventListener("click",function() {
+              if (score >= cursorCost) {
+                  score = score - 250;
+                  cursorCost = Math.round(cursorCost * 1.15);
+                  baker = baker + 1;
+                  
+                  
+                  
+                  document.getElementById("score1").innerHTML = score;
+                  document.getElementById("bakercost").innerHTML = cursorCost;
+                  document.getElementById("baker").innerHTML = cursor;
+                  
+                  
+              }
+      
+        
+         
+        });  
         
         function updateScorePerSecond() {
             scorePerSecond = cursor + grandma * 5;
@@ -165,6 +193,7 @@ tr:nth-child(even) {
          setInterval(function() {
              score = score + cursor;
              score = score + grandma * 5;
+             score = score + baker * 20;
              document.getElementById("score1").innerHTML = score;
              
              
