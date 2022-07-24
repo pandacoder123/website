@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>    
     
-    <body>
+    <body id="bodyy">
    <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-33DPHXTNKR"></script>
 <script>
@@ -37,6 +37,7 @@
 <style>
 * {
   box-sizing: border-box;
+  
 }
 
 #ipp {
@@ -1134,6 +1135,33 @@ right:26%;
       right: 45%;
 
     }
+
+    #car-icon {
+      position: absolute;
+      top: 1600px;
+      right: 31%;                                                                                                                                                                                                                                                                                                             ;
+
+    }
+
+
+
+    #button3 {
+      position: fixed;
+      bottom: 4%;
+      right: 4%;
+      color: black;
+      border-radius: 50px;
+      width: 67px;
+      height: 67px;
+
+
+    }
+
+    .dark-mode {
+      background-color: #252633;
+  color: white;
+
+    }
         
         
 
@@ -1151,7 +1179,19 @@ position:absolute;
 
 
 
+<button id="button3" onclick="changeColor()">Dark Mode</button>
 
+<script type="text/javascript">
+  function changeColor() {
+    var element = document.body;
+  element.classList.toggle("dark-mode");
+  
+  
+}
+
+
+
+</script>
 
 <div class="topnav">
  
@@ -1200,6 +1240,10 @@ position:absolute;
                 <div class="games-buttons" id="mine-icon" ><p>Minecraft</p>
                   <a href="mine.html"><img src="mine.jpeg" width="120px" height="120px"></a>               <p width="100px">Minecraft is a great game to pass time and exercise your mind. You can win by eliminating your opponent.</p>
                   </div>
+
+                  <div class="games-buttons" id="car-icon" ><p>Helix Jump</p>
+                    <a href="car.html"><img src="helix.png" width="160px" height="140px"></a>               <p width="100px">Minecraft is a great game to pass time and exercise your mind. You can win by eliminating your opponent.</p>
+                    </div>
     
        
         
