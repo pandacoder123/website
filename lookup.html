@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Google</title>
+</head>
+<body>
+
+    <!-- <input type="text" placeholder="Type " id="inputId" class="inputClass">
+    <button type="button" onclick="getInputValue();">Submit</button>
+    <script>
+      function getInputValue() {
+        // Selecting the input element and get its value 
+        let inputVal = document.getElementsByClassName("inputClass")[0].value;
+        // Displaying the value
+        alert(inputVal);
+        document.getElementById("fnf").src = inputVal;
+      }
+      
+    </script>
+
+<div class="container">
+                        
+  <p><em></em><button onclick="var el = document.getElementById('element'); el.requestFullscreen();" id="button1">
+    Play
+  </button></p>
+  <div class="element" id="element">
+  
+
+    
+      
+      <iframe
+      id="fnf"
+ style="width: 100%; height: 100%; overflow: hidden;"
+ src=""
+ scrolling="yes">
+</iframe>
+                          
+                          </div>
+</div> -->
+    <div id="navbar">
+        
+        <a href="#" id="menu"><img src="menu.png" height="30px" width="30px"></a>
+        <a href="#" id="sign-in">Sign in</a>
+        
+    </div>
+    <div id="main">
+        <a href="#" id="logo"><img src="logo.png"></a>
+        <input type="text" id="search" type="text" placeholder="Type " id="inputId" class="inputClass">
+        <div id="flexbox">
+            <button id="random-search-btn" type="button" onclick="getInputValue();">Search</button>
+            <button onclick="var el = document.getElementById('element'); el.requestFullscreen();" id="random-search-btn">Fullscreen</button>
+        </div>
+        <p id="google-text">Put Any URL in Searchbox and Click on Search to Access it!</a></p>
+        
+            
+          </button></p>
+    </div>
+    <div id="footer">
+        
+    </div>
+<div  id="element">
+    <iframe
+      id="fnf"
+ style="width: 100%; height: 100%; overflow: hidden;"
+ src=""
+ scrolling="yes">
+</iframe>
+
+</div>
+
+    <script>
+        function getInputValue() {
+          // Selecting the input element and get its value 
+          let inputVal = document.getElementsByClassName("inputClass")[0].value;
+          // Displaying the value
+          alert(inputVal);
+          document.getElementById("fnf").src = inputVal;
+        }
+        
+      </script>
+
+    <style>html {
+        height: 100%;
+        width: 100%;
+    }
+    
+    /*Navbar Section*/
+    #navbar {
+        display: grid;
+        grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
+        grid-template-rows: 50px;
+        grid-template-areas: 
+        "about store . gmail image menu sign-in";
+        margin: 0 20px 0 10px;
+    }
+    
+    a, p {
+        text-decoration: none;
+        color: rgba(0,0,0,0.87);
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    #about {
+        grid-area: about;
+        justify-self: center;
+        align-self: center;
+    }
+    #store {
+        grid-area: store;
+        justify-self: center;
+        align-self: center;
+    }
+    #gmail {
+        grid-area: gmail;
+        justify-self: center;
+        align-self: center;
+    }
+    #image {
+        grid-area: image;
+        justify-self: center;
+        align-self: center;
+        margin-right: 10px;
+    }
+    #menu {
+        grid-area: menu;
+        justify-self: center;
+        align-self: center;
+        margin-right: 20px;
+    }
+    #sign-in {
+        grid-area: sign-in;
+        justify-self: center;
+        align-self: center;
+        background-color: #4683ea;
+        height: 30px;
+        width: 65px;
+        line-height: 30px;
+        text-align: centeR;
+        color: white;
+        font-weight: bold;
+        border: 1px solid #4285f4;
+    }
+    
+    /*Main Section*/
+    #main {
+        min-height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 250px 70px 70px 250px;
+        grid-template-areas: 
+        ". logo ."
+        ". search ."
+        ". flexbox ."
+        ". google-text .";
+    }
+    
+    #logo {
+        grid-area: logo;
+        justify-self: center;
+        align-self: end;
+    }
+    #search {
+        grid-area: search;
+        height: 30px;
+        width: 80%;
+        align-self: center;
+        justify-self: center;
+        border: 1px solid rgba(0, 0, 0, 0.151);
+        border-radius: 30px;
+    }
+    
+    #search:focus {
+        box-shadow: 1px 1px 5px grey;
+    }
+    #search:hover {
+        box-shadow: 1px 1px 5px grey;
+    }
+    
+    #flexbox {
+        display: flexbox;
+        grid-area: flexbox;
+        justify-self: center;
+        align-self: center;
+    }
+    #google-search-btn {
+        border: none;
+        font-size: 15px;
+        color: #5F6368;
+        margin-right: 25px;
+        padding: 7px 15px 7px 15px;
+        border-radius: 3px;
+    }
+    #random-search-btn {
+        border: none;
+        font-size: 15px;
+        color: #5F6368;
+        padding: 7px 15px 7px 15px;
+        border-radius: 3px;
+    }
+    #google-search-btn:hover {
+        border: 1px solid rgba(0, 0, 0, 0.226);
+        cursor: pointer;
+    }
+    #random-search-btn:hover {
+        border: 1px solid rgba(0, 0, 0, 0.226);
+    }
+    
+    #google-text {
+        grid-area: google-text;
+        justify-self: center;
+    }
+    #deutsch {
+        color: blue;
+    }
+    
+    /*Footer Section*/
+    #footer {
+        position: absolute;
+        bottom: 0;
+        display: grid;
+        grid-template-columns: 100px 100px 150px 1330px 70px 70px 70px;
+        grid-template-rows: 50px;
+        grid-template-areas: 
+        "advertising business hsw . privacy terms settings";
+    }
+    
+    #advertising {
+        grid-area: advertising;
+        justify-self: center;
+        align-self: center;
+    }
+    #business {
+        grid-area: business;
+        justify-self: center;
+        align-self: center;
+    }
+    #hsw {
+        grid-area: hsw;
+        justify-self: center;
+        align-self: center;
+    }
+    #privacy {
+        grid-area: privacy;
+        justify-self: center;
+        align-self: center;
+    }
+    #terms {
+        grid-area: terms;
+        justify-self: center;
+        align-self: center;
+    }
+    #settings {
+        grid-area: settings;
+        justify-self: center;
+        align-self: center;
+    }</style>
+</body>
+</html>
