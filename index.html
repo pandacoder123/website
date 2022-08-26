@@ -130,6 +130,7 @@ a {
   
   background-size:100% 100%;
   background-position:center top;
+  
 
   
   
@@ -376,15 +377,17 @@ margin-right:18px;
 #light {
     position: absolute;
     margin-left: 10%;
-    top:1%;
-    font-size:38px;
+    top:-5%;
+    font-size:45px;
+    left: -7%;
     
 }
     
     #light:hover {
     background-color:transparent;
-    transition: 00.5s;
+    transition: 01.0s;
     color:aqua;
+    border-radius: 10px;
     
     }
 
@@ -404,6 +407,7 @@ margin-right:18px;
     right:23%;
     height: auto;
     width: auto;
+    visibility: hidden;
     }
     
     #util {
@@ -413,6 +417,7 @@ margin-right:18px;
     padding:7px;
     top:3%;
     right:17%;
+    visibility: hidden;
        
     }    
     
@@ -423,7 +428,7 @@ margin-right:18px;
     padding:7px;
     top:3%;
     right:32%;
-          
+    visibility: hidden;
     }    
         
     
@@ -532,15 +537,16 @@ margin-right:18px;
    
     
     #welcome {
+      position: relative;
+      left: 32%;
       width:35%;
+      margin-top: 16%;
     font-family: 'Roboto', sans-serif;
     height:fit-content;
-    margin-left:27%;
+    
     color:white;
     
-    margin-top:18%;
-        padding-left:8px;
-        padding-right:8px;
+    
         position: absolute;
         top: -7%;
     
@@ -962,8 +968,8 @@ margin-right:18px;
 
     #lightimg {
       margin-top: 1%;
-      width: 48px;
-      height: 48px;
+      width: 53px;
+      height: 53px;
 
     }
 
@@ -1007,6 +1013,75 @@ margin-right:18px;
 
   }
 
+  #butt {
+
+float: right;
+
+}
+
+#navbarbutton {
+    position:absolute;
+    right:30px;
+    top:30px;
+    height: 10%;
+    width: 5.2%;
+    
+     
+    
+    }
+
+    #navbarbutton:hover {
+      transform: translateY(-5px);
+	transition: 0.5s;
+      
+
+
+    }
+
+    .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-right .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
   
 
   
@@ -1034,6 +1109,8 @@ margin-right:18px;
     <a href="aboutus-page.html" id="about" class="items"  ><b >About Us</b></a>
     <a href="games-page.html" id="game" class="items"><b>Games</b></a>
    <a href="util-center.html" id="util"  class="items"><b>Utilities</b></a>
+   <span style="font-size:01px;cursor:pointer" id="butt" onclick="openNav()">&#9776; <img id="navbarbutton" src="navbarbutton.png"></img> </span>
+
     
   </div>
         <div id="welcome">
@@ -1160,6 +1237,20 @@ function hideElement() {
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script></div>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+  }
+  </script>
     
        
         <div id="copyright"><p>© Information4u.net</p>
@@ -1186,6 +1277,14 @@ function hideElement() {
         
         
         </script>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="newgame.html">Games</a>
+          <a href="util-center.html">Utilites</a>
+          <a href="aboutus-page.html">About Us</a>
+          <a href="lookup2.html">AnySearch</a>
+          <a href="mailto:kcat41703@gmail.com">Contact</a>
+        </div>
         <footer>
   
   <a href="mailto:kcat41703@gmail.com" id="mailto">Email Me!</a></p>
