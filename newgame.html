@@ -330,7 +330,7 @@ margin-right:18px;
     float:left;
     font-size:33px;
     font-weight:1000px;
-    color:black;
+    color:rgb(255, 255, 255);
 }
     
     #light:hover {
@@ -1242,8 +1242,8 @@ footer a:visited {
        }
 
        #row-1 {
-        position: absolute;
-        top: 39.5%;
+        position: relative;
+        top: 9.5%;
         left: 1%;
         gap: 48px;
         justify-content: center;
@@ -1283,8 +1283,8 @@ footer a:visited {
        }
 
        #row-2 {
-        position: absolute;
-        top: 57%;
+        position: relative;
+        top: 12%;
         left: 1%;
         gap: 48px;
         justify-content: center;
@@ -1331,8 +1331,6 @@ footer a:visited {
   top: 4%;
   flex-direction: row;
   justify-content: center;
-  
-  
   white-space: nowrap;
 
 
@@ -1526,11 +1524,12 @@ body {
 }
 
 #navbarbutton {
-    position:absolute;
+    position:fixed;
     right:30px;
     top:11px;
     height: 10%;
-    width: 5.2%;
+    width: 95px;
+    object-fit: fill;
     
      
     
@@ -1572,6 +1571,7 @@ body {
                   
         
         <div id="texts--1">Recommended</div>
+                  
                    <div id="row-top" class="" >
                     
                     
@@ -1630,8 +1630,8 @@ body {
                       <div class="gameicon"><a href="snake-page.html"><img src="snakeimg.png" width="120px" height="100px" class="allimg"></a></div>
                       <div class="gameicon"><a href="kart.html"><img src="kart.png" width="100px" height="100px" class="allimg"></a></div>
                       <div class="gameicon"><a href="slope.html"><img src="OIP (5).jpg" width="100px" height="100px" class="allimg"></a></div>
-                      <div class="gameicon" ><a href="mine.html"><img src="mine.jpeg" width="100px" height="100px" class="allimg"></a></div>
                       <div class="gameicon"><a href="chess.html"><img src="chess-piece-clip-art-13.png" width="90px" height="90px" class="allimg"></a></div>
+                      <div class="gameicon" ><a href="mine.html"><img src="mine.jpeg" width="100px" height="100px" class="allimg"></a></div>
                       <div class="gameicon"><a href="paper.html"><img src="paper.jpg" width="100px" height="100px" class="allimg"></a></div>
                       <!-- start of test -->
                       <div class="gameicon" ><a href="mine.html"><img src="mine.jpeg" width="100px" height="100px" class="allimg"></a></div>
@@ -1646,15 +1646,35 @@ body {
 
         <div id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Clients</a>
-          <a href="#">Contact</a>
+          
+          <a class="alllink" href="newgame.html">Games</a>
+  
+             
+                <a class="alllink" href="util-center.html">Utilities</a>
+              
+              
+              
+                
+              
+  
+              
+                <a class="alllink" href="aboutus-page.html">About</a>
+
+                <a class="alllink" href="lookup2.html">AnySearch</a>
+
+                <a class="alllink" href="mailto:kcat41703@gmail.com">Contact</a>
+
+                
         </div>
 
                    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
                    <script>
+                    
+
+
+
+
                     function openNav() {
                       document.getElementById("mySidenav").style.width = "250px";
                       document.getElementById("main").style.marginRight = "250px";
