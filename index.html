@@ -14,10 +14,10 @@
 </script>
     
     <script data-ad-client="ca-pub-6748383947326676" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <title>Information4u: The Amazing Site - Online Games - Utilites - About Us</title>
+    <title>Information4u: The Useful Site - Online Games - Utilites - About Us</title>
     <meta charset="UTF-8">
-  <meta name="description" content="IP Catcher is the informational website for everyone! ">
-  <meta name="keywords" content="Information4u, online games, free unblocked games,current time, local weather, IP address,unblocked games at school, crypto price, slope game">
+  <meta name="description" content="Iinformation4u.net is the informational website for everyone with many no internet, online games and useful utilities, such as snake 2048, and slope">
+  <meta name="keywords" content="Information4u, online games, no internet games, internet games, free unblocked games,current time, local weather, useful utilities, IP address,unblocked games at school, crypto price, slope game, slope, 2048, snake">
   <meta name="author" content="Pan G">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="light.png"/>
@@ -46,9 +46,45 @@
 </script>
     
 <style>
+  html,body{
+	
+}
+
+.box{
+	
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.box button{
+	height: 50px;
+	width: 110px;
+	letter-spacing: 2px;
+	font-family: calibri;
+	font-size: 20px;
+	border-radius: 30px;
+	border: none;
+	box-shadow: 0px 8px 15px rgba(0,0,0,.4);
+	background: #fff;
+	outline: none;
+  text-align: centers;
+}
+
+.box button:hover{
+	box-shadow: 0px 15px 20px #033f77;
+	background: #82d4e4;
+	color: #fff;
+	transform: translateY(-5px);
+	transition: 0.5s;
+	cursor: pointer;
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  
 }
 
 #ipp {
@@ -61,8 +97,9 @@
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
-  font-family: Arial;
-  background-image:url("background.jpg");
+  font-family: 'Ubuntu', sans-serif;
+font-family: 'Varela Round', sans-serif;
+  background-image:url("backgroundimg.png");
   background-size: 100% 100%;
   background-repeat:no-repeat;
     overflow:auto;
@@ -94,6 +131,7 @@ a {
   
   background-size:100% 100%;
   background-position:center top;
+  
 
   
   
@@ -340,14 +378,18 @@ margin-right:18px;
 #light {
     position: absolute;
     margin-left: 10%;
-    top:1%;
-    font-size:38px;
-    font-weight:1000px;
+    top:-5%;
+    font-size:45px;
+    left: -7%;
+    
 }
     
     #light:hover {
     background-color:transparent;
-    color:black;
+    transition: 01.0s;
+    color:aqua;
+    border-radius: 10px;
+    
     }
 
 /* Change color of dropdown links on hover */
@@ -366,6 +408,7 @@ margin-right:18px;
     right:23%;
     height: auto;
     width: auto;
+    visibility: hidden;
     }
     
     #util {
@@ -375,6 +418,7 @@ margin-right:18px;
     padding:7px;
     top:3%;
     right:17%;
+    visibility: hidden;
        
     }    
     
@@ -385,23 +429,41 @@ margin-right:18px;
     padding:7px;
     top:3%;
     right:32%;
-          
+    visibility: hidden;
     }    
         
     
     #about:hover {
     background-color:transparent;
-    color:black;
+    box-shadow: 0px 15px 20px #033f77;
+	background: #82d4e4;
+	color: #fff;
+	transform: translateY(-5px);
+	transition: 0.5s;
+	cursor: pointer;
+  border-radius: 15px;
     }
     
     #util:hover {
-    background-color:transparent;
-    color:black;
+      background-color:transparent;
+    box-shadow: 0px 15px 20px #033f77;
+	background: #82d4e4;
+	color: #fff;
+	transform: translateY(-5px);
+	transition: 0.5s;
+	cursor: pointer;
+  border-radius: 15px;
     }
     
     #game:hover {
-    background-color:transparent;
-    color:black;
+      background-color:transparent;
+    box-shadow: 0px 15px 20px #033f77;
+	background: #82d4e4;
+	color: #fff;
+	transform: translateY(-5px);
+	transition: 0.5s;
+	cursor: pointer;
+  border-radius: 15px;
     }
     
 #map {
@@ -476,15 +538,16 @@ margin-right:18px;
    
     
     #welcome {
-    width:35%;
+      position: relative;
+      left: 32%;
+      width:35%;
+      margin-top: 16%;
     font-family: 'Roboto', sans-serif;
     height:fit-content;
-    margin-left:27%;
+    
     color:white;
     
-    margin-top:18%;
-        padding-left:8px;
-        padding-right:8px;
+    
         position: absolute;
         top: -7%;
     
@@ -494,11 +557,13 @@ margin-right:18px;
     
     font-family: 'Roboto', sans-serif;
       
-    font-size:50px;
+    font-size:40px;
     /* margin-top: 30%; */
     text-align: center;
-    font-weight: 500;
-    line-height: 2em;
+    font-weight: 300;
+    line-height: 2.2em;
+        
+        
     
     }
     
@@ -512,12 +577,12 @@ margin-right:18px;
 
     }
     #welcome-buttons {
-    position: relative;
+    position: absolute;
     border-radius:25px;
     display:flex;
     align-items:stretch;
-    margin-left: 20%;
-    margin-top: 2.3%;
+    margin-left:24%;
+    margin-top: 4.5%;
     
     
     
@@ -528,6 +593,10 @@ margin-right:18px;
    border-radius:25px;
     display:flex;
     align-items:stretch;
+    text-align: center;
+    margin-left:7%;
+    margin-top: 3%;
+
     
     
     }
@@ -536,61 +605,70 @@ margin-right:18px;
  border-radius:25px;
     display:flex;
     align-items:stretch;
+ 
 }
     
     
-    }
+}
     
     #utilities-button {
-    border-radius:25px;
-    flex:1;
-    margin:10px;
-    height:40px;
-    font-size:18px;
-    font-family: 'Roboto', sans-serif;
+      border-radius:25px;
+    display:flex;
+    align-items:stretch;
+    text-align: center;
+    margin-left: 2%;
+    margin-top: 3%;
+        
     
     }
     
      #aboutuss {
-    width:35%;
+    width:100%;
+    border-radius: 25px;
     height:fit-content;
-    margin-left:10px;
+    margin-left:17px;
     color:white;
-    border:2px solid black;
-         margin-top:9%;
+    border:4px solid #27a1c9;
+         margin-top:-10%;
         padding-left:8px;
         padding-right:8px;
         position:absolute;
         top:850px;
+        text-align: center;
+        
     
     }
    #gamess{ 
-    width:35%;
+    width: 100%;
+    border-radius: 25px;
     height:fit-content;
-    margin-left:10px;
+    margin-left:15px;
     color:white;
-    border:2px solid black;
-         margin-top:9%;
+    border:4px solid #27a1c9;
+         margin-top:-10%;
         padding-left:8px;
         padding-right:8px;
         position:absolute;
         top:1850px;
+        text-align: center;
     }
     
     #utill{ 
-    width:35%;
+    width:100%;
+    border-radius: 25px;
     height:fit-content;
-    margin-left:10px;
+    margin-left:15px;
     color:white;
-    border:2px solid black;
-         margin-top:9%;
+    border:4px solid #27a1c9;
+         margin-top:-10%;
         padding-left:8px;
         padding-right:8px;
         position:absolute;
         top:2850px;
+        text-align: center;
     }
     
-    #about-box {
+    #about-boxx {
     position:absolute;
     top:1000px;
     border:1px solid black;
@@ -615,6 +693,9 @@ margin-right:18px;
     border-radius:25px;
     display:flex;
     align-items:stretch;
+    text-align: center;
+    margin-left: 2%;
+    margin-top: 4.5%;
         
     }
     
@@ -635,6 +716,9 @@ margin-right:18px;
     border-radius:25px;
     display:flex;
     align-items:stretch;
+    text-align: center;
+    margin-left: 1%;
+    margin-top: 4.5%;
         
     }
     
@@ -656,9 +740,13 @@ margin-right:18px;
     }
     
     #util-buttons {
-    border-radius:25px;
+      border-radius:25px;
     display:flex;
     align-items:stretch;
+    text-align: center;
+    margin-left: 0.5%;
+    margin-top: 3%;
+        
         
     }
     .boxtext {
@@ -732,7 +820,7 @@ margin-right:18px;
     }
     
     #footeer {
-  postion:absolute;
+  position:absolute;
   top:3000px;
   text-align: center;
   padding: 3px;
@@ -807,6 +895,7 @@ margin-right:18px;
   #aboutuss {
     position: absolute;
     top: 950px;
+    float: left;
 
 
 
@@ -819,11 +908,15 @@ margin-right:18px;
 }
     
     #terms {
-    color:blue;
+    color:rgb(0, 0, 0);
     }
+
+   
+
+    
     
     #privacy {
-    color:blue;
+    color:rgb(0, 0, 0);
     }
     
     #anchorad {
@@ -834,18 +927,181 @@ margin-right:18px;
     
     }
     
+    #mailto {
+    position:fixed;
+    bottom:15px;
+    left:15px;
+    color:black;
+    text-decoration:none;
+    }
+    
+    #mailto:hover {
+    color:blue;
+    text-decoration:none;
+    
+    }
+    
+   #cookie {
+    position:fixed;
+    bottom:0;
+    right:0;
+    left:0;
+    height:5%;
+    background-color:gray;
+    text-align:center;
+    font-family:Roboto;
+       font-size:25px;
+       z-index:1;
+    
+    
+    }
+    
+    #curve {
+    border-radius:30px;
+    font-family:Roboto;
+    background-color:gray;
+    color:white;
+        height:35px;
+        width:70px;
+        text-size:20px;
+    
+    }
+
+    #lightimg {
+      margin-top: 1%;
+      width: 53px;
+      height: 53px;
+
+    }
+
+    .alllink {
+      text-decoration: none;
+      font-size: 110%;
+
+    }
+
+    a.alllink{
+      color: #000000;
+    }
+
+    a.alllink:hover {
+      color: white;
+      transition: 00.5s;
+
+    }
+
+    .aboutlink {
+      margin-right: 7%;
+      color: #000000;
+      
+
+    }
+
+    .aboutlink:hover {
+      color: white;
+      
+
+    }
+
+  .ea {
+      margin-left: 7%;
+    }
+
+  .textbox {
+    border: #000000 1px;
+    width: 100px;
+    height: 50px;
+
+  }
+
+  #butt {
+
+float: right;
+
+}
+
+#navbarbutton {
+    position:absolute;
+    right:30px;
+    top:30px;
+    height: 10%;
+    width: 5.2%;
+    
+     
+    
+    }
+
+    #navbarbutton:hover {
+      transform: translateY(-5px);
+	transition: 0.5s;
+      
+
+
+    }
+
+    .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-right .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+  
+
+  
+
+    
+    
+    
 </style>
 
-<img src="sand.png" alt="Girl in a jacket" id="backpic4">
-  <img src="sand.png" alt="Girl in a jacket" id="backpic2">
-<img src="background.jpg" alt="Girl in a jacket" id="backpic3">
+<img src="sand.png" alt="Sand Background" id="backpic4">
+  <img src="sand.png" alt="Sand Background" id="backpic2">
+<img src="background.jpg" alt="Background Image" id="backpic3">
 
 
 
 <div class="topnav">
-  <p style="color: #ffffff;">Disclamer</p>
+  <p style="color: #ffffff;"></p>
  
-  <a href="index.html" id="light"class="items">Information4u</a>
+  <a href="index.html" id="light"class="items"><img src="light.png" alt="" id="lightimg"></img>Information4u</a>
 
   
 
@@ -854,34 +1110,115 @@ margin-right:18px;
     <a href="aboutus-page.html" id="about" class="items"  ><b >About Us</b></a>
     <a href="games-page.html" id="game" class="items"><b>Games</b></a>
    <a href="util-center.html" id="util"  class="items"><b>Utilities</b></a>
+   <span style="font-size:01px;cursor:pointer" id="butt" onclick="openNav()">&#9776; <img alt="online games navbar" id="navbarbutton" src="navbarbutton.png"></img> </span>
+
     
   </div>
         <div id="welcome">
-            <div id="welcome-title"><h2>Information4u</h1></div>
-            <div id="welcome-body"><h5>Play Online Games Now - Learn More - Have Fun</h5><p>Information4u is an informational and fun website for all! On Information4u you can acess many different games and utilites.<a href="policy.html">Privacy Policy</a>, and <a href="terms.html">Terms and Conditions</a></p></div>
-            <div id="welcome-buttons"> <a id="about-button" class="buttons" href="#about-title"> About</a>  <a id="games-button" class="buttons" href="#game-title">Games</a>  <a class="buttons"  id="utilities-button" href="#util-title">Utilities</a></div>
+            <div id="welcome-title"><h1>Best Online Games and Tools</h1></div>
+            <div id="welcome-body"><h5>Play Online Games - About Us - Use Utilities</h5><p>Information4u is an informational and fun website for all! On Information4u you can acess many different games and utilites that can help you in your daily life.<a href="policy.html">Privacy Policy</a>, and <a href="terms.html">Terms and Conditions</a>. On Information4u.net you can use many useful utilites, also you can play many fun no internet games, that will pass time!</p></div>
+            <div id="welcome-buttons" class="box"> 
+              
+             <button class="aboutlink">
+              <a class="alllink"  href="#about-title">About</a>
+            </button> 
+
+            <button >
+              <a class="alllink" href="#util-title">Utilities</a>
+            </button>
+            
+            <button class="ea">
+              <a class="alllink" href="#game-title">Games</a>
+            </button>  
+            
+            
+
         </div>
         
-            
+        
          <div id="aboutuss">
-       <div id="about-title"><h1>About Us</h1></div>
-            <div id="about-body"><p>Information4u is a informational and fun website for all! On Information4u you can acess many different games and utilites.</p></div>
-            <div id="about-buttons"> <a class="buttons"  id="about-button" href="#about-title" >About</a>  <a  class="buttons"  id="games-button" href="#game-title">Games</a>  <a class="buttons"  id="utilities-button" href="#util-title">Utilities</a> <a class="buttons" id="utilities-button" href="aboutus-page.html">Learn About Us Now!</a></div>
+             <div id="about-title"><h2>About Us</h2></div>
+            <div id="about-body"><p>Learn about Information4u and learn how to share this websit with your friends and others. Make sure to share! By sharing this website(information4u.net) you will help us make this website bigger and better! Please Do not use an Ablock on this website because this site earns its revenue from ads.</p></div>
+            <div id="about-buttons" class="box"> 
+              
+              <button class="aboutlink">
+                <a class="alllink" href="aboutus-page.html">About</a>
+              </button>  
+  
+              <button >
+                <a class="alllink" href="#util-title">Utilities</a>
+              </button>
+              
+              <button class="ea">
+                <a class="alllink" href="#game-title">Games</a>
+              </button> 
+              
+              
+
+
+            </div>
         </div>
 
         
         
         <div id="gamess">
-            <div id="game-title"><h1>Online Games</h1></div>
-            <div id="game-body"><p>Information4u is a informational and fun website for all! On Information4u you can acess many different games and utilites.</p></div>
-            <div id="game-buttons"> <a class="buttons"  id="about-button" href="#about-title" >About</a>  <a class="buttons" id="games-button" href="#game-title">Games</a>  <a class="buttons"  id="utilities-button" href="#util-title">Utilities</a><a class="buttons" id="utilities-button" href="games-page.html">Play Now!</a></div>
+            <div id="game-title"><h2>Online Games</h2></div>
+            <div id="game-body"><p>Play no internet games on Information4u.net, that are very fun, some of these games are online slope, snake, and 2048. These online games need no internet to play and are still very adicting. Make sure to share!</p></div>
+            <div id="game-buttons" class="box"> 
+              
+              <button class="aboutlink">
+              <a class="alllink"  href="#about-title">About</a>
+            </button>  
+
+            <button >
+              <a class="alllink" href="#util-title">Utilities</a>
+            </button>
+            
+            <button class="ea">
+              <a class="alllink" href="newgame.html">Games</a>
+            </button>
+
+            
+          
+          
+          </div>
         </div>
         
          <div id="utill">
-            <div id="util-title"><h1>Utilities</h1></div>
-            <div id="util-body"><p>Information4u is a informational and fun website for all! On Information4u you can acess many different games and utilites.</p></div>
-            <div id="util-buttons"> <a class="buttons"  id="about-button" href="#about-title" >About</a>  <a class="buttons"   id="games-button" href="#game-title">Games</a>  <a class="buttons"  id="utilities-button" href="#util-title">Utilities</a><a class="buttons" id="utilities-button" href="util-center.html">Access Utilites!</a></div>
+            <div id="util-title"><h2>Utilities</h2></div>
+            <div id="util-body"><p>On information4u.net there are many utilities such as a live crypto price tracker, and ip address viewer, and your local time. These utilities can help you in your daily life at work or at school. By using these utilities you can be more efficant! Please share!</p></div>
+            <div id="util-buttons" class="box"> 
+
+              <button class="aboutlink">
+
+                <a class="alllink"  href="#about-title">About</a>
+              </button>  
+  
+              <button >
+                <a class="alllink" href="util-center.html">Utilities</a>
+              </button>
+              
+              <button class="ea">
+                <a class="alllink" href="#game-title">Games</a>
+              </button>
+  
+              
+
+
+
+            </div>
         </div>
+        
+        <div id="cookie">By continuing on this website you agree to the cookie policy. Read our cookie policy here <a href="cookie-text.html">cookie policy</a>.<button id="curve" onclick="hideElement()">Close</button></div>
+        
+        <script>
+function hideElement() {
+            element = document.querySelector('#cookie');
+            element.style.visibility = 'hidden';
+        }
+
+</script>
+
         
         <div id="anchorad">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6748383947326676"
@@ -896,6 +1233,20 @@ margin-right:18px;
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script></div>
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+  }
+  </script>
     
        
         <div id="copyright"><p>© Information4u.net</p>
@@ -922,6 +1273,18 @@ margin-right:18px;
         
         
         </script>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="newgame.html">Games</a>
+          <a href="util-center.html">Utilites</a>
+          <a href="aboutus-page.html">About Us</a>
+          <a href="lookup2.html">AnySearch</a>
+          <a href="mailto:kcat41703@gmail.com">Contact</a>
+        </div>
+        <footer>
+  
+  <a href="mailto:kcat41703@gmail.com" id="mailto">Email Me!</a></p>
+</footer>
 <!-- <div data-aos="fade-right"
      
      

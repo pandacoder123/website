@@ -58,7 +58,6 @@ body {
     height:1020px;
     overflow-x: hidden;
     
-    
 }
 
     
@@ -1213,7 +1212,36 @@ footer a:visited {
   }
 } */
 
+.container {
+  margin: 40px auto;
+  max-width: 600px;
+}
+.element {
+  width: 100%;
+  background-color: skyblue;
+  text-align: center;
+  color: white;
+  font-size: 3em;
+  visibility: hidden;
+}
 
+.element:fullscreen {
+  background-color: #e4708a;
+  width: 100vw;
+  height: 100%;
+  visibility: visible;
+}
+
+
+#button1 {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #103792fd;
+    color: #0099ff;
+
+
+}
 
 
        
@@ -1263,19 +1291,29 @@ footer a:visited {
                    </head>
                    
                      <center>
-                          <h1>Chess</h1>
+                          <h1>Derby Crash 4</h1>
                       
                       <div id="canvas"></div>	
                       
                       
                       
                       </center>
-                      
-                      <iframe
- style="width: 100%; height: 700px; overflow: hidden;"
- src="https://playpager.com/embed/chess/index.html"
- scrolling="no">
+                      <div class="container">
+                        <img src="https://images.crazygames.com/games/derby-crash-4/cover-1656950450071.png?auto=format,compress&q=45&cs=strip&ch=DPR&w=178&h=100&fit=crop" width="200px" height="200px">
+  <p><em></em><button onclick="var el = document.getElementById('element'); el.requestFullscreen();" id="button1">
+    Play
+  </button></p>
+  <div class="element" id="element">
+      
+      <iframe
+ style="width: 100%; height: 100%; overflow: hidden;"
+ src="https://games.crazygames.com/en_US/derby-crash-4/index.html"
+ scrolling="yes">
 </iframe>
+                          
+                          </div>
+</div>
+                      
 
 
 
@@ -1356,5 +1394,4 @@ your IP address,the weather, date, and even classic and fun games like 2048, Coo
 
 </body>
 </html>
-
 

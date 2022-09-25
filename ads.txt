@@ -1,1 +1,14 @@
 google.com, pub-6748383947326676, DIRECT, f08c47fec0942fa0
+google.com, pub-6257835363939071, RESELLER, f08c47fec0942fa0
+google.com, pub-8415986145297288, RESELLER, f08c47fec0942fa0
+appnexus.com, 7474, RESELLER
+rubiconproject.com, 16980, RESELLER, 0bfd66d529a55807
+aps.amazon.com, 9e9bffbc-66c5-4b5b-89aa-4d839e05ce3a, RESELLER
+pubmatic.com, 156561, RESELLER, 5d62403b186f2ace
+pubmatic.com, 157592, RESELLER, 5d62403b186f2ace
+spotxchange.com, 239989, RESELLER, 7842df1d2fe2db34
+spotx.tv, 239989, RESELLER, 7842df1d2fe2db34
+tremorhub.com, 2lw6n-dzid4, RESELLER, 1a4e959a1b50034a
+indexexchange.com, 185783, RESELLER
+indexexchange.com, 188176, RESELLER
+openx.com, 539430362, RESELLER, a698e2ec38604c6

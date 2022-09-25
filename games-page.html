@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>    
     
-    <body>
+    <body id="bodyy">
    <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-33DPHXTNKR"></script>
 <script>
@@ -37,6 +37,7 @@
 <style>
 * {
   box-sizing: border-box;
+  
 }
 
 #ipp {
@@ -53,7 +54,7 @@ body {
   background-size: 100% 100%;
   background-repeat:no-repeat;
     overflow:auto;
-    height:1020px;
+    height:1200px;
     overflow-x: hidden;
     
 }
@@ -79,7 +80,7 @@ a {
   overflow: visible;
   margin:-18px;
   background: transparent;
-  
+  width: 100%;
   background-size:100% 100%;
   background-position:center top;
   height:100px;
@@ -1018,6 +1019,22 @@ right:26%;
 
 }
 
+#chess-icon {
+ position:absolute;
+ top:1650px;
+ right:26%;
+
+
+    }
+    
+    #smash-icon {
+    position:absolute;
+    top:2000px;
+    right:26%;
+        
+    
+    }
+
 }
 
 
@@ -1054,6 +1071,22 @@ right:26%;
         top:1800px;
         right:41%;
     }
+
+
+    #chess-icon {
+      position:absolute;
+        top:2500px;
+        right:41%;
+    }
+
+
+    
+    
+    #smash-icon {
+    position:absolute;
+        top:3200px;
+        right:41%;
+    }
     
     
 
@@ -1074,6 +1107,79 @@ right:26%;
 
     }
 
+    #chess-icon {
+      position:absolute;
+        top:1200px;
+        right:45%;
+
+
+    }
+    
+    #smash-icon {
+    position:absolute;
+        top:1200px;
+        right:31%;
+        
+    
+    }
+
+    #fnf-icon {
+      position: absolute;
+      top:1600px;
+      right:59%;
+    }
+
+    #mine-icon{
+      position: absolute;
+      top: 1600px;
+      right: 45%;
+
+    }
+
+    #car-icon {
+      position: absolute;
+      top: 1600px;
+      right: 31%;                                                                                                                                                                                                                                                                                                             ;
+
+    }
+
+    #plane-icon {
+      position: absolute;
+      top: 2000px;
+      right: 59%;
+
+    }
+
+
+
+    #button3 {
+      position: fixed;
+      bottom: 4%;
+      right: 4%;
+      color: black;
+      border-radius: 50px;
+      width: 67px;
+      height: 67px;
+
+
+    }
+
+    .dark-mode {
+      background-color: #252633;
+  color: white;
+
+    }
+
+    #paper-icon {
+      position: absolute;
+      top: 2000px;
+      right: 45%;
+
+
+    }
+        
+        
+
 
     #Title { 
 position:absolute;
@@ -1082,11 +1188,25 @@ position:absolute;
     font-size:40px;
     text-decoration: none;
      } 
+
+     
 </style>
 
 
 
+<button id="button3" onclick="changeColor()">Dark Mode</button>
 
+<script type="text/javascript">
+  function changeColor() {
+    var element = document.body;
+  element.classList.toggle("dark-mode");
+  
+  
+}
+
+
+
+</script>
 
 <div class="topnav">
  
@@ -1103,22 +1223,50 @@ position:absolute;
         <div id="games-icons" >
                 <div class="games-buttons" id="snake-icon">
                     <p>Snake</p>
-                    <a href="snake-page.html"><img src="Screenshot 2021-12-20 1.36.14 PM.png" width="100px" height="100px"></a>
+                    <a href="snake-page.html"><img src="Screenshot 2021-12-20 1.36.14 PM.png" width="110px" height="100px"></a>
                     <p width="100px">Snake is a classic in the game industry! To gain points you move your snake to collect sqaures.Earn points and try to beat your high score.</p>
             </div>
             
             <div class="games-buttons" id="two-icon" ><p>2048</p>
-            <a href="two-page.html"><img src="Screenshot 2021-12-20 1.00.08 PM.png" width="100px" height="150px"></a>               <p width="100px">2048 is a great game to pass time and exercise your mind. You can score points by merging cubes.</p>
+            <a href="two-page.html"><img src="Screenshot 2021-12-20 1.00.08 PM.png" width="120px" height="150px"></a>               <p width="100px">2048 is a great game to pass time and exercise your mind. You can score points by merging cubes.</p>
             </div>
             
             
                 <div class="games-buttons" id="cookie-icon"><p>Cookie Clicker</p>
-                    <a href="clicker.html"><img src="COOKIE.png" width="100px" height="150px"></a>         <p width="100px">Cookie Clicker is a great game to pass time and have fun. You can score points by making cookies</p>
+                    <a href="clicker.html"><img src="COOKIE.png" width="150px" height="150px"></a>         <p width="100px">Cookie Clicker is a great game to pass time and have fun. You can score points by making cookies</p>
         </div>
             
             <div class="games-buttons" id="slope-icon" ><p>Slope</p>
-            <a href="#"><img src="Screenshot 2021-12-20 1.00.08 PM.png" width="100px" height="150px"></a>               <p width="100px">Slope is a great game to pass time and exercise your mind. You can score points by merging cubes.</p>
+            <a href="slope.html"><img src="OIP (5).jpg" width="150px" height="150px"></a>               <p width="100px">Slope is a great game to pass time and exercise your mind. You can score points by the time spent alive on the ramp.</p>
             </div>
+
+            <div class="games-buttons" id="chess-icon" ><p>Chess</p>
+              <a href="chess.html"><img src="chess-piece-clip-art-13.png" width="120px" height="140px"></a>               <p width="100px">Chess is a great game to pass time and exercise your mind. You can win by capturing the opponents king.</p>
+              </div>
+            
+             <div class="games-buttons" id="smash-icon" ><p>Smash Karts</p>
+              <a href="kart.html"><img src="kart.png" width="120px" height="120px"></a>               <p width="100px">Smash Karts is a great game to pass time and exercise your mind. You can win by eliminating your opponent.</p>
+              </div>
+
+              <div class="games-buttons" id="fnf-icon" ><p>FNF</p>
+                <a href="fnf.html"><img src="fnf.jpeg" width="120px" height="120px"></a>               <p width="100px">FNF is a great game to pass time and exercise your mind. You can win by eliminating your opponent.</p>
+                </div>
+
+                <div class="games-buttons" id="mine-icon" ><p>Minecraft</p>
+                  <a href="mine.html"><img src="mine.jpeg" width="120px" height="120px"></a>               <p width="100px">Minecraft is a great game to pass time and exercise your mind. You can win by eliminating your opponent.</p>
+                  </div>
+
+                  <div class="games-buttons" id="car-icon" ><p>Helix Jump</p>
+                    <a href="car.html"><img src="helix.png" width="160px" height="140px"></a>               <p width="100px">Minecraft is a great game to pass time and exercise your mind. You can win by eliminating your opponent.</p>
+                    </div>
+
+                    <div class="games-buttons" id="plane-icon" ><p>Flight Simulator</p>
+                      <a href="plane.html"><img src="plane.png" width="130px" height="130px"></a>               <p width="100px">Flight Sim is a great game to pass time and exercise your mind. You can win by eliminating your opponent.</p>
+                      </div>
+
+                      <div class="games-buttons" id="paper-icon" ><p>Paper io</p>
+                        <a href="paper.html"><img src="paper.jpg" width="130px" height="130px"></a>               <p width="100px">Paper io is a great game to pass time and exercise your mind. You can win by eliminating your opponent.</p>
+                        </div>
     
        
         
@@ -1270,5 +1418,4 @@ your IP address,the weather, date, and even classic and fun games like 2048, Coo
 
 </body>
 </html>
-
 

@@ -17,25 +17,109 @@
     <body>
         <style>
             .sectionLeft {
-                float: left;
+                float:left;
                 
             }
         </style>
         <div class="sectionLeft">
        <span>Cookies: <span id="score1"></span></span>
-        <img src="cokkie.jpg" class="center" height = 260 width = 260 id="btn">
+        <img src="cokkie.jpg" class="center" height = 305 width = 305 id="btn">
          </div>
-        <button id="cursorcost" class="center2"oneclick="buyCursor">Cursor [</span >15 </span>]--<span id="cursors">0</span></button>
-         <button id="grandmacost" class="center2" >Grandma [</span >500 </span>]--<span id="grandmas">0</span></button>
+        
+
+         
+
+        
+        <div id="clicker">Cookie Clicker!</div>
+            
+         
         
         
-        <script>
+<style>
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+    position:absolute;
+    right:0;
+    top:0;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+    
+    #table {
+    float:right;
+    
+    }
+    
+    #clicker {
+    position:absolute;
+    top:0;
+    left:0;
+    font-size:25px;
+    }
+    
+    #score1 {
+    
+    font-size:25px;
+    }
+</style>
+
+
+
+<table id="table">
+  <tr>
+    <th>Worker</th>
+    <th>Count</th>
+    <th>Effect</th>
+    
+  </tr>
+  <tr>
+      <td><p>Cursor</p><button id="cursorcost" class="center2"oneclick="buyCursor"> </span >$15</span></button></td>
+    <td><span id="cursors">0</span></td>
+    <td>+1</td>
+    
+  </tr>
+  <tr>
+      <td><p>Grandma</p><button id="grandmacost" class="center2" > </span >$50</span></button></td>
+    <td><span id="grandmas">0</span></td>
+    <td>+5</td>
+    
+  </tr>
+
+ <tr>
+      <td><p>Baker</p><button id="bakercost" class="center2" > </span >$250</span></button></td>
+    <td><span id="baker">0</span></td>
+    <td>+20</td>
+    
+  </tr>
+ 
+</table>
+
+
+
+
+
+
+<script>
           let score = 0;
           let cursorCost = 15;
           let cursor = 0;
-          let incriment = 1
-          let grandmacost = 500;
+          let incriment = 1;
+          let grandmacost = 50;
           let grandma = 0;
+          let baker = 0;
+          let bakercost = 250;
           
         
           
@@ -49,7 +133,8 @@
               score = score - grandmacost;
               grandma += 1;
               grandmacost = Math.round(grandmacost * 1.15)
-              grandma = incriment += 100;
+              
+              
               
               document.getElementById("score1").innerHTML = score;
               document.getElementById("grandmacost").innerHTML = grandmacost;
@@ -68,11 +153,31 @@
                   score = score - 15;
                   cursorCost = Math.round(cursorCost * 1.15);
                   cursor = cursor + 1;
-                  cursor = incriment += 10;
+                  
+                  
                   
                   document.getElementById("score1").innerHTML = score;
                   document.getElementById("cursorcost").innerHTML = cursorCost;
                   document.getElementById("cursors").innerHTML = cursor;
+                  
+                  
+              }
+      
+        
+         
+        });  
+    
+     document.getElementById("bakercost").addEventListener("click",function() {
+              if (score >= cursorCost) {
+                  score = score - 250;
+                  cursorCost = Math.round(cursorCost * 1.15);
+                  baker = baker + 1;
+                  
+                  
+                  
+                  document.getElementById("score1").innerHTML = score;
+                  document.getElementById("bakercost").innerHTML = cursorCost;
+                  document.getElementById("baker").innerHTML = cursor;
                   
                   
               }
@@ -88,27 +193,15 @@
         }
         
          setInterval(function() {
-             score = score + cursor/2;
+             score = score + cursor;
              score = score + grandma * 5;
+             score = score + baker * 20;
              document.getElementById("score1").innerHTML = score;
              
              
          }, 1000);
      
         </script>
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6748383947326676"
-     crossorigin="anonymous"></script>
-<!-- cookie ad -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6748383947326676"
-     data-ad-slot="2669906466"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
         
     </body>
     
