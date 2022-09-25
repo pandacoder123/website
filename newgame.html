@@ -83,7 +83,7 @@ a {
 .topnav {
   overflow: visible;
   margin:-18px;
-  background: rgb(62, 62, 62);
+  background: rgb(70, 69, 69);
   
   background-size:100% 100%;
   background-position:center top;
@@ -1246,6 +1246,8 @@ footer a:visited {
         top: 9.5%;
         left: 1%;
         gap: 48px;
+        overflow-x: visible;
+        display: block;
         justify-content: center;
         display: flex;
         flex-direction: row; /* Default value */
@@ -1293,6 +1295,18 @@ footer a:visited {
         width: fit-content;
 }
 
+      #row-3 {
+        position: relative;
+        top: 20%;
+        left: 1%;
+        gap: 48px;
+        justify-content: center;
+        display: flex;
+        flex-direction: row; /* Default value */
+        width: fit-content;
+
+      }
+
        
 
 
@@ -1309,6 +1323,18 @@ footer a:visited {
         transform: translate3D(0,-1px,0) scale(1.25);
 
        }
+
+       .texta {
+        color: black;
+        font: medium;
+       }
+
+      .gameicon:hover .texta{
+        transition: 0.5s;
+        visibility: visible;
+        transform: translate3D(0,-1px,0) scale(1.25);
+
+      }
 
        
 
@@ -1429,7 +1455,7 @@ div{
 }
 
 body {
-  background: rgb(26, 26, 26);
+  background: #242424;
 }
 
 .horizontal-scroll-wrapper{
@@ -1535,6 +1561,45 @@ body {
     
     }
 
+#alllink {
+  font-size: 23px;
+
+}
+
+/* .overlay {
+  position: absolute;
+  top: 0;
+  border-radius: 25px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 7%;
+  opacity: 0;
+  transition: 5s ease;
+  background-color: #008CBA;
+} */
+
+
+
+.texta {
+  color: rgb(180, 180, 180);
+  font-size: 10px;
+  position: relative;
+  top: -50px;
+  left: -4px;
+  visibility: hidden;
+  text-align: center;
+  
+
+  
+}
+
+a{
+  font-size: small;
+  text-decoration: none;
+}
+
 
 
 </style>
@@ -1575,7 +1640,7 @@ body {
                    <div id="row-top" class="" >
                     
                     
-                        <div class="bigicon"><a href="fnf.html"><img src="fnf.jpeg" width="160px" height="160px" class="allimg"></a></div>
+                        <div class="bigicon"><a href="fnf.html"><div id="1a"><img src="fnf.jpeg" width="160px" height="160px" class="allimg"></div></a></div>
                         <div class="bigicon"><a href="two-page.html"><img src="2048.png" width="150px" height="150px" class="allimg"></a></div>
                         <div class="bigicon"><a href="car.html"><img src="helix.png" width="160px" height="160px" class="allimg"></a></div>
                         <div id="smash"><a href="kart.html"><img src="kart.png" width="200px" height="150px" class="allimg"></a></div>
@@ -1601,20 +1666,20 @@ body {
           
                      <div id="row-1"> 
                         
-                        <div class="gameicon"><a href="hole.html"><img src="Hole.io_logo.png" width="100px" height="100px" class="allimg"></a></div>
-                        <div class="gameicon"><a href="car.html"><img src="helix.png" width="100px" height="100px" class="allimg"></a></div>
-                        <div class="gameicon"><a href="slope.html"><img src="OIP (5).jpg" width="100px" height="100px" class="allimg"></a></div>
-                        <div class="gameicon"><a href="fnf.html"><img src="fnf.jpeg" width="100px" height="100px" class="allimg"></a></div>
-                        <div class="gameicon"><a href="clicker.html"><img src="cookie2.png" width="100px" height="100px" class="allimg"></a></div>
-                        <div class="gameicon"><a href="snake-page.html"><img src="snakeimg.png" width="120px" height="100px" class="allimg"></a></div>
-                        <div class="gameicon" ><a href="mine.html"><img src="mine.jpeg" width="100px" height="100px" class="allimg"></a></div>
-                        <div class="gameicon"><a href="kart.html"><img src="kart.png" width="100px" height="100px" class="allimg"></a></div>
-                        <div class="gameicon"><a href="chess.html"><img src="chess-piece-clip-art-13.png" width="90px" height="90px" class="allimg"></a></div>
-                        <div class="gameicon"><a href="paper.html"><img src="paper.jpg" width="100px" height="100px" class="allimg"></a></div>
+                        <div class="gameicon"><a href="hole.html"><img src="Hole.io_logo.png" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="hole.html">Hole.io</a></div></div></div>
+                        <div class="gameicon"><a href="car.html"><img src="helix.png" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="car.html">Helix Jump</a></div></div></div>
+                        <div class="gameicon"><a href="slope.html"><img src="OIP (5).jpg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="slope.html">Slope</a></div></div></div>
+                        <div class="gameicon"><a href="fnf.html"><img src="fnf.jpeg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="fnf.html">FNF</a></div></div></div>
+                        <div class="gameicon"><a href="clicker.html"><img src="cookie2.png" width="100px" height="100px" class="allimg"><div class="overlay"><div class="texta"><a href="clicker.html">Cookie Clicker</a></div></div></a></div>
+                        <div class="gameicon"><a href="snake-page.html"><img src="snakeimg.png" width="120px" height="100px" class="allimg"><div class="overlay"><div class="texta"><a href="snake-page.html">Snake</a></div></div></a></div>
+                        <div class="gameicon" ><a href="mine.html"><img src="mine.jpeg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta" ><a href="mine.html">Minecraft</a></div></div></div>
+                        <div class="gameicon"><a href="kart.html"><img src="kart.png" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="kart.html">Smash Karts</a></div></div></div>
+                        <div class="gameicon"><a href="chess.html"><img src="chess-piece-clip-art-13.png" width="90px" height="90px" class="allimg"></a><div class="overlay"><div class="texta"><a href="chess.html">Chess</a></div></div></div>
+                        <div class="gameicon"><a href="paper.html"><img src="paper.jpg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="paper.html">Paper.io</a></div></div></div>
                         <!-- e -->
-                        <div class="gameicon"><a href="kart.html"><img src="kart.png" width="100px" height="100px" class="allimg"></a></div>
-                        <div class="gameicon"><a href="chess.html"><img src="chess-piece-clip-art-13.png" width="90px" height="90px" class="allimg"></a></div>
-                        <div class="gameicon"><a href="paper.html"><img src="paper.jpg" width="100px" height="100px" class="allimg"></a></div>
+                        <div class="gameicon"><a href="kart.html"><img src="kart.png" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="kart.html">Smash Karts</a></div></div></div>
+                        <div class="gameicon"><a href="chess.html"><img src="chess-piece-clip-art-13.png" width="90px" height="90px" class="allimg"></a><div class="overlay"><div class="texta"><a href="chess.html">Chess</a></div></div></div>
+                        <div class="gameicon"><a href="paper.html"><img src="paper.jpg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="paper.html">Paper.io</a></div></div></div>
                         
 
                      </div>
@@ -1623,34 +1688,56 @@ body {
                      
 
                      <div id="row-2">
-                      <div class="gameicon"><a href="fnf.html"><img src="fnf.jpeg" width="100px" height="100px" class="allimg"></a></div>
-                      <div class="gameicon"><a href="two-page.html"><img src="2048.png" width="100px" height="100px" class="allimg"></a></div>
-                      <div class="gameicon"><a href="car.html"><img src="helix.png" width="100px" height="100px" class="allimg"></a></div>
-                      <div class="gameicon"><a href="clicker.html"><img src="cookie2.png" width="100px" height="100px" class="allimg"></a></div>
-                      <div class="gameicon"><a href="snake-page.html"><img src="snakeimg.png" width="120px" height="100px" class="allimg"></a></div>
-                      <div class="gameicon"><a href="kart.html"><img src="kart.png" width="100px" height="100px" class="allimg"></a></div>
-                      <div class="gameicon"><a href="slope.html"><img src="OIP (5).jpg" width="100px" height="100px" class="allimg"></a></div>
-                      <div class="gameicon"><a href="chess.html"><img src="chess-piece-clip-art-13.png" width="90px" height="90px" class="allimg"></a></div>
-                      <div class="gameicon" ><a href="mine.html"><img src="mine.jpeg" width="100px" height="100px" class="allimg"></a></div>
-                      <div class="gameicon"><a href="paper.html"><img src="paper.jpg" width="100px" height="100px" class="allimg"></a></div>
+                      <div class="gameicon"><a href="fnf.html"><img src="fnf.jpeg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="fnf.html">FNF</a></div></div></div>
+                      <div class="gameicon"><a href="two-page.html"><img src="2048.png" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="two-page.html">2048</a></div></div></div>
+                      <div class="gameicon"><a href="car.html"><img src="helix.png" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="car.html">Helix Jump</a></div></div></div>
+                      <div class="gameicon"><a href="clicker.html"><img src="cookie2.png" width="100px" height="100px" class="allimg"><div class="overlay"><div class="texta"><a href="clicker.html">Cookie Clicker</a></div></div></a></div>
+                      <div class="gameicon"><a href="snake-page.html"><img src="snakeimg.png" width="120px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="snake.html">Snake</a></div></div></div>
+                      <div class="gameicon"><a href="kart.html"><img src="kart.png" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="kart.html">Smash Karts</a></div></div></div>
+                      <div class="gameicon"><a href="slope.html"><img src="OIP (5).jpg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="slope.html">Slope</a></div></div></div>
+                      <div class="gameicon"><a href="chess.html"><img src="chess-piece-clip-art-13.png" width="90px" height="90px" class="allimg"></a><div class="overlay"><div class="texta"><a href="chess.html">Chess</a></div></div></div>
+                      <div class="gameicon" ><a href="mine.html"><img src="mine.jpeg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta" ><a href="mine.html">Minecraft</a></div></div></div>
+                      <div class="gameicon"><a href="paper.html"><img src="paper.jpg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="paper.html">Paper.io</a></div></div></div>
                       <!-- start of test -->
-                      <div class="gameicon" ><a href="mine.html"><img src="mine.jpeg" width="100px" height="100px" class="allimg"></a></div>
-                        <div class="gameicon"><a href="kart.html"><img src="kart.png" width="100px" height="100px" class="allimg"></a></div>
-                        <div class="gameicon"><a href="chess.html"><img src="chess-piece-clip-art-13.png" width="90px" height="90px" class="allimg"></a></div>
+                      <div class="gameicon" ><a href="mine.html"><img src="mine.jpeg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="mine.html">Minecraft</a></div></div></div>
+                      <div class="gameicon"><a href="kart.html"><img src="kart.png" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="kart.html">Smash Karts</a></div></div></div>
+                      <div class="gameicon"><a href="chess.html"><img src="chess-piece-clip-art-13.png" width="90px" height="90px" class="allimg"></a><div class="overlay"><div class="texta"><a href="chess.html">Chess</a></div></div></div>
                         
 
 
                    </div>
+
+                   <div id="row-3">
+                    <div class="gameicon"><a href="doge.html"><img src="doge.png" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="doge.html">Doge Miner</a></div></div></div>
+                    <div class="gameicon"><a href="drift.html"><img src="drift.png" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="drift.html">Drift Hunters</a></div></div></div>
+                    <div class="gameicon"><a href="basket.html"><img src="basket-removebg-preview.png" width="105px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="basket.html">Basket Bros</a></div></div></div>
+                    <div class="gameicon"><a href="tap.html"><img src="tapbasketball-cover.png" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="tap.html">Tap Basket</a></div></div></div>
+                    <div class="gameicon"><a href="crazyroll.html"><img src="https://images.crazygames.com/games/tap-tap-shots/cover-1655202548222.png?auto=format,compress&q=45&cs=strip&ch=DPR&w=178&h=100&fit=crop" width="120px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="taptap.html">Tap-Tap Shots</a></div></div></div>
+                    <div class="gameicon"><a href="madalincars.html"><img src="Car-Simulator-2018-logo-1024x768.png" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="madalincars.html">Unbounded</a></div></div></div>
+                    <div class="gameicon"><a href="chess.html"><img src="chess-piece-clip-art-13.png" width="90px" height="90px" class="allimg"></a><div class="overlay"><div class="texta"><a href="chess.html">Chess</a></div></div></div>
+                    <div class="gameicon"><a href="slope.html"><img src="OIP (5).jpg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="slope.html">Slope</a></div></div></div>
+                    <div class="gameicon" ><a href="mine.html"><img src="mine.jpeg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="mine.html">Minecraft</a></div></div></div>
+                    <div class="gameicon"><a href="paper.html"><img src="paper.jpg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="paper.html">Paper.io</a></div></div></div>
+                    <!-- start of test -->
+                    <div class="gameicon" ><a href="mine.html"><img src="mine.jpeg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="mine.html">Minecraft</a></div></div></div>
+                    <div class="gameicon"><a href="roll.html"><img src="check.png" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="roll.html">Teacher Simulator</a></div></div></div>
+                    <div class="gameicon"><a href="evo.html"><img src="evo.png" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="evo.html">Evo World</a></div></div></div>
+
+
+                      
+
+
+                 </div>
 
                    <span style="font-size:01px;cursor:pointer" id="butt" onclick="openNav()">&#9776; <img id="navbarbutton" src="navbarbutton.png"></img> </span>
 
         <div id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           
-          <a class="alllink" href="newgame.html">Games</a>
+          <a id="alllink" href="newgame.html">🎮 Games</a>
   
              
-                <a class="alllink" href="util-center.html">Utilities</a>
+                <a id="alllink" href="util-center.html">	&#x26C5; Utilities</a>
               
               
               
@@ -1658,11 +1745,11 @@ body {
               
   
               
-                <a class="alllink" href="aboutus-page.html">About</a>
+                <a id="alllink" href="aboutus-page.html">❔About</a>
 
-                <a class="alllink" href="lookup2.html">AnySearch</a>
+                <a id="alllink" href="lookup2.html">🔎 AnySearch</a>
 
-                <a class="alllink" href="mailto:kcat41703@gmail.com">Contact</a>
+                <a id="alllink" href="mailto:kcat41703@gmail.com">📧 Contact</a>
 
                 
         </div>

@@ -47,8 +47,11 @@
     
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Varela+Round&display=swap');
+
 body {
-  font-family: Arial;
+  font-family: 'Ubuntu', sans-serif;
+font-family: 'Varela Round', sans-serif;
   background-color:white;
   background-size: 100% 100%;
   background-repeat:no-repeat;
@@ -498,6 +501,7 @@ margin-right:18px;
  border-radius:25px;
     display:flex;
     align-items:stretch;
+    
 }
     
     
@@ -682,9 +686,11 @@ margin-right:18px;
     
         #navbarbutton {
     position:absolute;
-    right:0;
-    top:0;
-    visibility: hidden;
+    right:30px;
+    top:30px;
+    height: 10%;
+    width: 5.2%;
+    
      
     
     }
@@ -1087,6 +1093,51 @@ position:absolute;
     
     
     }
+
+    .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#butt {
+
+	float: right;
+
+}
+
+#main {
+  transition: margin-right .5s;
+  padding: 16px;
+}
 </style>
 
 
@@ -1101,9 +1152,9 @@ position:absolute;
 </div>
 
     <a id="Title" href="games-page.html">Utilites Center</a>
-    <a href="aboutus-page.html" id="about" class="items"  ><b >About Us</b></a>
-  <a href="games-page.html" id="game" class="items"><b>Games</b></a>
-   <b><a href="util-center.html" id="util"  class="items"><b>Utilities</b></a></b>
+    <a href="aboutus-page.html" id="about" class="items"  ><b ></b></a>
+  <a href="games-page.html" id="game" class="items"><b></b></a>
+   <b><a href="util-center.html" id="util"  class="items"><b></b></a></b>
         
         <div id="games-icons" >
                 <div class="games-buttons" id="snake-icon">
@@ -1132,7 +1183,48 @@ position:absolute;
         <div id="copyright">© Information4u.net</div>
         
        
-        <img id="navbarbutton" src="navbarbutton.png"></img>
+        
+        <span style="font-size:01px;cursor:pointer" id="butt" onclick="openNav()">&#9776; <img id="navbarbutton" src="navbarbutton.png"></img> </span>
+
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a class="alllink" href="newgame.html">Games</a>
+  
+             
+          <a class="alllink" href="util-center.html">Utilities</a>
+        
+        
+        
+          
+        
+
+        
+          <a class="alllink" href="aboutus-page.html">About</a>
+
+          <a class="alllink" href="lookup2.html">AnySearch</a>
+
+          <a class="alllink" href="mailto:kcat41703@gmail.com">Contact</a>
+        </div>
+        <!-- <div id="main">
+          <h2>Sidenav Push Example</h2>
+          <p>Click on the element below to open the side navigation menu, and push this content to the right. Notice that we add a black see-through background-color to body when the sidenav is opened.</p>
+          
+        </div> -->
+        
+        
+        <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginRight = "250px";
+          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginRight= "0";
+          document.body.style.backgroundColor = "white";
+        }
+        </script>
 
 
 
