@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<body>
+<form id="contact" action="echo.pl" method="POST">
+<fieldset>
+<legend>Please enter ur details</legend>
+Name: <input type="text" name="Name" value="">
+<br><br>
+Email: <input type="text" name="Email" value="">
+</fieldset>
+<input type="submit">
+</form>
+
+
+<script>
+( function () {
+
+    const form = document.getElementById('contact')
+
+    form.addEventListener('submit',
+        function (event) { validate(form,event)})
+
+})()
+
+function validate(form,event) {
+    let value = form.elements['Name'].value
+    if(value === ''){
+        alert('please enter name')
+
+    }
+
+}
+
+</script>
+
+
+
+</body>
+</html>
