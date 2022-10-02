@@ -59,7 +59,8 @@ body {
   background-repeat:no-repeat;
     height:1020px;
     overflow-x: scroll;
-    
+ 
+  
 }
 
     
@@ -81,12 +82,15 @@ a {
 /* Style the top navigation bar */
 .topnav {
   overflow: visible;
+  position: relative;
   margin:-18px;
   background: rgb(70, 69, 69);
-  
+  width: 105%;
   background-size:100% 100%;
-  background-position:center top;
+  
   height:76px;
+  top:0;
+
   
   
   
@@ -218,7 +222,7 @@ margin-right:18px;
 }
 .description  {
     color:black;
-    width:100%px;
+    width:100%;
      display:inline-block;
   margin-left: auto;
   margin-right: auto;
@@ -326,10 +330,14 @@ margin-right:18px;
 }
 
 #light {
-    float:left;
+    position: relative;
+    left: 46%;
     font-size:33px;
     font-weight:1000px;
     color:rgb(255, 255, 255);
+    top: 6px;
+    left: -13%;
+    z-index: 1000;
 }
     
     #light:hover {
@@ -1366,7 +1374,7 @@ footer a:visited {
   display: flex;
   width: fit-content;
   gap: 31.7px;
-  top: 4%;
+  top: 6.7%;
   flex-direction: row;
   justify-content: center;
   white-space: nowrap;
@@ -1431,8 +1439,8 @@ footer a:visited {
 }
 #texts--1 {
   position: relative;
-  top: 30px;
-  left: -60px;
+  top: 60px;
+  left: 10px;
   font-size: 32px;
   color: white;
 
@@ -1575,6 +1583,7 @@ body {
 
 #alllink {
   font-size: 23px;
+  cursor: pointer;
 
 }
 
@@ -1624,6 +1633,21 @@ a{
   color: white;
 }
 
+#texttopnav{
+  position: relative;
+  right: 37.5%;
+
+}
+
+#picture{
+  position: absolute;
+  right: 16.5%;
+  top: 16.1px;
+  height: 55px;
+  
+
+}
+
 
 
 </style>
@@ -1633,9 +1657,10 @@ a{
 
 
 <div class="topnav">
- 
+  <div id="texttopnav">
+  <img id="picture" src="light.png">
   <a href="index.html" id="light"class="items">Information4u</a>
-
+</div>
   
 </div>
         
@@ -1674,7 +1699,7 @@ a{
                         <div class="bigicon"><a href="slope.html"><img src="OIP (5).jpg" width="160px" height="160px" class="allimg"></a></div>
                         <!-- start of test -->
 
-                        <div class="bigicon"><a href="agar.html"><img src="Agar.io_appstore_logo.png" width="160px" height="160px" class="allimg"></a></div>
+                        <div class="bigicon"><a href="agar.html"><img src="shell.png" width="160px" height="160px" class="allimg"></a></div>
                         <div class="bigicon"><a href="hole.html"><img src="Hole.io_logo.png" width="150px" height="150px" class="allimg"></a></div>
                         
                         
@@ -1684,7 +1709,7 @@ a{
                         </div>
 
 
-                        <div id="texts">Trending Games</div>
+                        <div id="texts">🔥Hot Games</div>
 
                    
           
@@ -1708,7 +1733,7 @@ a{
 
                      </div>
 
-                     <div id="text-2">Top</div>
+                     <div id="text-2">hi</div>
                      
 
                      <div id="row-2">
@@ -1740,7 +1765,7 @@ a{
                     <div class="gameicon"><a href="madalincars.html"><img src="Car-Simulator-2018-logo-1024x768.png" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="madalincars.html">Unbounded</a></div></div></div>
                     <div class="gameicon"><a href="chess.html"><img src="chess-piece-clip-art-13.png" width="90px" height="90px" class="allimg"></a><div class="overlay"><div class="texta"><a href="chess.html">Chess</a></div></div></div>
                     <div class="gameicon"><a href="slope.html"><img src="OIP (5).jpg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="slope.html">Slope</a></div></div></div>
-                    <div class="gameicon" ><a href="mine.html"><img src="mine.jpeg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="mine.html">Minecraft</a></div></div></div>
+                    <div class="gameicon" ><a href="mine.html"><img src="roblox.jpg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="roblox.html">Roblox</a></div></div></div>
                     <div class="gameicon"><a href="paper.html"><img src="paper.jpg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="paper.html">Paper.io</a></div></div></div>
                     <!-- start of test -->
                     <div class="gameicon" ><a href="mine.html"><img src="mine.jpeg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="mine.html">Minecraft</a></div></div></div>
@@ -1798,6 +1823,29 @@ a{
                 <a id="alllink" href="lookup2.html">🔎 AnySearch</a>
 
                 <a id="alllink" href="mailto:kcat41703@gmail.com">📧 Contact</a>
+
+                <a id="">------------------</a>
+
+                <a id="alllink">🏀 Basketball</a>
+
+                <a id="alllink">🚗 Car Games</a>
+
+                <a id="alllink">.io</a>
+
+                <a id="alllink">⛏️ Minecraft</a>
+
+                <a id="alllink">🔫 FPS</a>
+
+                <a id="alllink">🖱️ Clicker</a>
+
+                <a id="alllink">👥 Mulitiplayer</a>
+
+                <a id="alllink">🏃 Stickman</a>
+
+
+
+                
+
 
                 
         </div>
