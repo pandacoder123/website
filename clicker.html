@@ -121,11 +121,13 @@ tr:nth-child(even) {
           let baker = 0;
           let bakercost = 250;
           
+          
         
           
           document.getElementById("btn").addEventListener("click",function() {
           score += incriment
          document.getElementById("score1").innerHTML = score;
+         setCookie('score')
         });  
         
         document.getElementById("grandmacost").addEventListener("click",function() {

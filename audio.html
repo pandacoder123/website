@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Audio Tool</title>
+</head>
+<body>
+
+
+<label for="input">Choose a video file to process:</label>
+<input type="file" id="input" name="input_video" accept="video/mp4, video/mov">
+<video id="video" width="100%" height="900" controls style="display: none;"></video>
+
+<script>document.getElementById("input").addEventListener("change", function() {
+  var media = URL.createObjectURL(this.files[0]);
+  var video = document.getElementById("video");
+  video.src = media;
+  video.style.display = "block";
+  video.play();
+});</script>
+
+</body>
+</html>
