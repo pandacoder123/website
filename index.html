@@ -108,7 +108,7 @@ body {
   aspect-ratio: 900/600;
   font-family: 'Ubuntu', sans-serif;
 font-family: 'Varela Round', sans-serif;
-  background-image:url("layered-peaks-haikei.svg");
+  background-image:url("lowpoly.svg");
   background-size: contain;
   background-repeat:no-repeat;
     overflow:auto;
@@ -569,11 +569,11 @@ margin-right:18px;
     
     font-family: 'Roboto', sans-serif;
       
-    font-size:40px;
+    font-size:70px;
     /* margin-top: 30%; */
     text-align: center;
     font-weight: 300;
-    line-height: 2.2em;
+    
         
         
     
@@ -647,6 +647,7 @@ margin-right:18px;
         position:absolute;
         top:350%;
         text-align: center;
+        background-image: url(polygon-scatter-haikei.svg);
         
     
     }
@@ -666,17 +667,18 @@ margin-right:18px;
     }
     
     #utill{ 
-    width:100%;
+      
+      width:100%;
     border-radius: 25px;
     height:fit-content;
-    margin-left:15px;
+    margin-left:17px;
     color:white;
     border:4px solid #27a1c9;
          margin-top:-10%;
         padding-left:8px;
         padding-right:8px;
         position:absolute;
-        top:1180%;
+        top:1150%;
         text-align: center;
     }
     
@@ -791,9 +793,9 @@ margin-right:18px;
 
     width:100%;
     position:absolute;
-    top:2000px;
+    top:210%;
     left:0px;
-    height: 150%;
+    background-size: repeat;
         
     
     
@@ -894,7 +896,7 @@ margin-right:18px;
   }
 }
 
-@media screen and (max-width: 1629px) {
+/* @media screen and (max-width: 1629px) {
 
   #gamess {
     position:absolute;
@@ -916,7 +918,7 @@ margin-right:18px;
 
 
 
-  }
+  } */
     
     
 
@@ -1183,22 +1185,36 @@ float: right;
       aspect-ratio: 900/600;
       width: 100%;
       background-size: cover;
-  background-repeat:no-repeat;
-  overflow: auto;
+  background-repeat:repeat;
   background-image:url("");
   border: none;
   
 
      }
+
+     #top {
+
+      position: relative;
+      top: 100%;
+     }
+
+     #tillte {
+      font-size: 30px;
+
+     }
     
-    
+   
+     
       
     
 </style>
 
-<img src="circle-scatter-haikei.svg" alt="Sand Background" id="backpic4" class="pics">
-  <img src="polygon-scatter-haikei.svg" alt="Sand Background" id="backpic2" class="pics">
-<img src="stacked-waves-haikei.svg" alt="Background Image" id="backpic3" class="pics">
+<div></div>
+
+<div></div>
+
+  
+
 
  <!-- <a href="aboutus-page.html" id="about" class="items"  ><b >About Us</b></a>
     <a href="games-page.html" id="game" class="items"><b>Games</b></a>
@@ -1298,10 +1314,20 @@ float: right;
 
     </div>
   </header>
+<!--   
+  <div id="top">
+    <img src="polygon-scatter-haikei.svg" alt="Sand Background" class="pics">
   
-        <div id="welcome">
+    
+  </div>
+  <div id="middle"><img src="stacked-waves-haikei.svg" alt="Background Image" id="backpic3" class="pics"></div>
+  
+  
+  <div id="end-bottom"><img src="circle-scatter-haikei.svg" alt="Sand Background" id="backpic4" class="pics"></div> -->
+
+         <div id="welcome">
           
-            <div id="welcome-title"><h1>Play Fun Online Games Anywhere</h1></div>
+            <div id="welcome-title"><p id="titlle">Play Fun Online Games Anywhere</p></div>
             <div id="welcome-body"><h5>Play Online Games - About Us - Use Utilities</h5><p>Information4u is an informational and fun website for all! On Information4u you can acess many different games and utilites that can help you in your daily life.<a href="policy.html">Privacy Policy</a>, and <a href="terms.html">Terms and Conditions</a>. On Information4u.net you can use many useful utilites, also you can play many fun no internet games,games play, play games online, and website games that will pass time!</p></div>
             <div id="welcome-buttons" class="box"> 
               
@@ -1322,7 +1348,7 @@ float: right;
         </div>
         
         
-        
+        <!-- <div id="about-section">
          <div id="aboutuss">
              <div id="about-title"><h2>About Us</h2></div>
             <div id="about-body"><p>Learn about Information4u and learn how to share this websit with your friends and others.online games in school Make sure to share! By sharing this website(information4u.net) you will help us make this website bigger and better! Please Do not use an Ablock on this website because this site earns its revenue from ads.</p></div>
@@ -1344,6 +1370,7 @@ float: right;
 
 
             </div>
+          </div>
         </div>
 
         
@@ -1397,7 +1424,7 @@ float: right;
 
 
             </div>
-        </div>
+        </div> --> 
         
         <div id="cookie">By continuing on this website you agree to the cookie policy. Read our cookie policy here <a href="cookie-text.html">cookie policy</a>.<button id="curve" onclick="hideElement()">Close</button></div>
         
