@@ -58,7 +58,7 @@ font-family: 'Varela Round', sans-serif;
   background-size: cover;
   background-repeat:no-repeat;
     overflow:auto;
-    height:1020px;
+    min-height:1020px;
     overflow-x: hidden;
     overflow-y: hidden;
     
@@ -1204,7 +1204,7 @@ position:absolute;
       }
 
       #list {
-        width: 100%;
+        max-width: 100%;
         display: grid;
         height: 100%;
         margin-left: 100px;
@@ -1213,8 +1213,80 @@ position:absolute;
         row-gap: 0px;
         grid-template-columns: auto auto auto auto;
         margin-right: 100px;
-
+        
       }
+      @media only screen and (max-width: 1446px) {
+        /* styles for browsers larger than 960px; */
+        #list {
+        max-width: 100%;
+        display: grid;
+        height: 100%;
+        margin-left: 100px;
+        margin-top: 30px;
+        column-gap: 0px;
+        row-gap: 0px;
+        grid-template-columns: auto auto;
+        margin-right: 100px;
+        overflow-x: visible;
+      }
+    }
+
+    @media only screen and (max-width: 764px) {
+      #list {
+        max-width: 100%;
+        display: grid;
+        height: fit-content;
+        margin-left: 100px;
+        margin-top: 30px;
+        column-gap: 0px;
+        row-gap: 0px;
+        grid-template-columns: auto;
+        margin-right: 100px;
+        overflow-x: visible;
+      }
+
+
+    }
+
+
+
+
+      @media only screen and (max-width: 1446px) {
+        /* styles for browsers larger than 960px; */
+        #list {
+        max-width: 100%;
+        display: grid;
+        height: 100%;
+        margin-left: 100px;
+        margin-top: 30px;
+        column-gap: 0px;
+        row-gap: 0px;
+        grid-template-columns: auto auto;
+        margin-right: 100px;
+        overflow-x: visible;
+      }
+    }
+
+    @media only screen and (max-width: 764px) {
+      #list {
+        max-width: 100%;
+        display: grid;
+        height: fit-content;
+        margin-left: 100px;
+        margin-top: 30px;
+        column-gap: 0px;
+        row-gap: 0px;
+        grid-template-columns: auto;
+        margin-right: 100px;
+        overflow-x: visible;
+      }
+
+
+    }
+
+
+
+
 
       .game-list {
         height:  500px;
@@ -1314,25 +1386,25 @@ position:absolute;
             </a>
           </li>
           <li>
-            <a href="#" class="nav-link text-white">
+            <a href="util-center.html" class="nav-link text-white">
               <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"/></svg>
               Utilities
             </a>
           </li>
           <li>
-            <a href="#" class="nav-link text-white">
+            <a href="blogs.html" class="nav-link text-white">
               <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#grid"/></svg>
               Blogs
             </a>
           </li>
           <li>
-            <a href="#" class="nav-link text-secondary">
+            <a href="mywebsites.html" class="nav-link text-secondary">
               <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#link"/></svg>
               My Websites
             </a>
           </li>
           <li>
-            <a href="#" class="nav-link text-white">
+            <a href="information4u.net/home/" class="nav-link text-white">
               <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"/></svg>
               About Us
             </a>
