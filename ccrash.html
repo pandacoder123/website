@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <body >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+ 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+
+    body{
+        background-color:lightblue;
+        background-size: cover;
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    p{font-family: 'Roboto', sans-serif;}
+
+    #title{
+      text-align: center;
+      font-size: xx-large;
+
+    }
+
+    #word{
+      font-size: x-large;
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    #box{
+      width: 500px;
+      height: 500px;
+      background-color: rgb(100, 100, 100);
+      margin-top: 10%;
+      margin-left: 38%;
+    }
+
+    #terms{
+      position: relative;
+      top:200px;
+    }
+</style>
+
+ 
+
+
+
+
+
+<h1 id="demo">Crash Chrome</h1>
+
+<p>Crash chrome when needed, thats it :)</p>
+
+<p>Use this a prank, a useful tool, or for anything else!</p>
+
+<p>USE AT YOUR OWN CAUTION</p>
+
+<p>I am not responsible for any damage caused</p>
+
+<P>Note: If used on chromebook, it will crash the whole chromebook/computer.</P>
+
+<button onclick="epic()">click here to crash chrome</button>
+
+
+<script>
+
+// window.onload=()=>location.hash="M"+"\u0001".repeat(2**25)+"m";
+
+onbeforeunload = function(){localStorage.x=1}
+
+
+function epic(){
+  
+    while(1)location.reload(1)
+   
+}
+</script>
+
+
+
+</body>
+</html> 
