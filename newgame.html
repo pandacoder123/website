@@ -4,8 +4,8 @@
 <head>
     <title>Information4u: The Amazing Site - Online Games - Utilites - About Us</title>
     <meta charset="UTF-8">
-  <meta name="description" content="PLay fun online games">
-  <meta name="keywords" content="online games in school, Games,info and fun,info,fun,Information,Helpful,IP, IP address,Date,Time,Games">
+  <meta name="description" content="My other websites that I have.">
+  <meta name="keywords" content="Information4u,info and fun,about us,information,info,fun,Information,Helpful,IP, IP address,Date,Time,Games">
   <meta name="author" content="Jonn Williams">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="light.png"/>
@@ -13,11 +13,11 @@
 <meta name="robots" content="index,follow">
 <link rel="apple-touch-icon" href="light.png"> 
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>    
     
     <body>
@@ -37,13 +37,8 @@
 </script>
     
 <style>
-
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Varela+Round&display=swap');
-
 * {
   box-sizing: border-box;
-  font-family: 'Varela Round', sans-serif;
-
 }
 
 #ipp {
@@ -54,15 +49,19 @@
     
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Varela+Round&display=swap');
+
 body {
-  font-family: Arial;
-  background-color:rgb(37, 150, 190);
-  background-size: 100% 100%;
+  font-family: 'Ubuntu', sans-serif;
+font-family: 'Varela Round', sans-serif;
+  background-image:url(low-poly-grid-haikei.svg);
+  background-size: cover;
   background-repeat:no-repeat;
-    height:1020px;
-    overflow-x: scroll;
- 
-  
+    overflow:auto;
+    min-height:1020px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
 }
 
     
@@ -84,15 +83,12 @@ a {
 /* Style the top navigation bar */
 .topnav {
   overflow: visible;
-  position: relative;
   margin:-18px;
-  background: rgb(70, 69, 69);
-  width: 105%;
-  background-size:100% 100%;
+  background: transparent;
   
-  height:76px;
-  top:0;
-
+  background-size:100% 100%;
+  background-position:center top;
+  height:100px;
   
   
   
@@ -154,17 +150,17 @@ a {
 }
 
 /* Add a card effect for articles */
-.cardd {
-  background-color:#ffffff;
+.card {
+  background-color:#485263;
   padding: 50px;
-  border: 10px solid rgb(0, 0, 0);
+  border:4px solid lightgreen;
   text-align:center;
   width:60%;
-  height:100%;
+  height:1500px;
   margin-top: 7.5%;
   position:absolute;
   left:20%;
-  /**/
+  
   
 }
 
@@ -224,7 +220,7 @@ margin-right:18px;
 }
 .description  {
     color:black;
-    width:100%;
+    width:100%px;
      display:inline-block;
   margin-left: auto;
   margin-right: auto;
@@ -332,14 +328,10 @@ margin-right:18px;
 }
 
 #light {
-    position: relative;
-    left: 46%;
+    float:left;
     font-size:33px;
     font-weight:1000px;
-    color:rgb(255, 255, 255);
-    top: 6px;
-    left: -13%;
-    z-index: 1000;
+    color:black;
 }
     
     #light:hover {
@@ -512,6 +504,7 @@ margin-right:18px;
  border-radius:25px;
     display:flex;
     align-items:stretch;
+    
 }
     
     
@@ -695,11 +688,13 @@ margin-right:18px;
     }
     
         #navbarbutton {
-    position:fixed;
-    right: 0;
-    top:0;
-    visibility: hidden;
-
+    position:absolute;
+    right:30px;
+    top:30px;
+    height: 10%;
+    width: 5.2%;
+    
+     
     
     }
     
@@ -737,7 +732,6 @@ margin-right:18px;
   bottom: 0;
   right: 0;
         color: white;
-        z-index: 100;
     }
     
     #copyright:hover {
@@ -761,7 +755,8 @@ margin-right:18px;
      #snake-icon {
       position:absolute;
       top:800px;
-      right:63%;
+      right:59%;
+      margin-right: 5px;
 
 
 
@@ -770,19 +765,29 @@ margin-right:18px;
     #cookie-icon {
       position:absolute;
       top:800px;
-      right:33%;
+      right:31%;
+      margin-right: 5px;
 
     }
 
     #two-icon {
       position:absolute;
       top:800px;
-      right:48%
+      right:45%;
+      margin-right: 5px;
 
+    }
+    
+    #crypto-icon {
+        position:absolute;
+        top:1200px;
+        right:59%;
+        margin-right: 5px;
+    
     }
 
 /*Mobile media screen - hamburger icon */
-    @media only screen and (max-width: 1100003px) {
+    @media only screen and (max-width: 1103px) {
         
      #navbarbutton {
     position:absolute;
@@ -1052,6 +1057,11 @@ right:26%;
   right:41%;
 
 }
+     #crypto-icon {
+        position:absolute;
+        top:1800px;
+        right:41%;
+    }
 
 
 }
@@ -1078,456 +1088,16 @@ position:absolute;
     font-size:40px;
     text-decoration: none;
      } 
-
-     
-
-
-
-     footer {
-  font-size: 0.8em;
-}
-
-/* @media (min-height: 425px) {
-  body {
-    --size: 25px;
-  }
-
-  footer {
-    height: 40px;
-    font-size: 1em;
-  }
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  
-
-} */
-
-/* header {
-  display: flex;
-  justify-content: space-between;
-  width: calc(var(--size) * 17);
-  font-size: 2em;
-  font-weight: 900;
-} */
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(15, auto);
-  grid-template-rows: repeat(15, auto);
-  border: var(--size) solid var(--color);
-  border: 15px solid black;
-}
-.tile {
-  position: relative;
-  width: var(--size);
-  height: var(--size);
-}
-.content {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-footer {
-  margin-top: 20px;
-  max-width: calc(var(--size) * 17);
-  text-align: center;
-}
-
-footer a:visited {
-  color: inherit;
-}
-/*
-#youtube,
-#youtube-card {
-  display: none;
-}
-
-
-  #youtube {
-    z-index: 2;
-    display: block;
-    width: 100px;
-    height: 70px;
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background: white;
-    border-radius: 50% / 11%;
-    transform: scale(0.8);
-    transition: transform 0.5s;
-  }
-
-  #youtube:hover,
-  #youtube:focus {
-    transform: scale(0.9);
-    background: red;
-  }
-
-  #youtube::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 7.5%;
-    left: -6%;
-    width: 112%;
-    height: 85%;
-    background: white;
-    border-radius: 9% / 50%;
-  }
-
-  #youtube:hover::before,
-  #youtube:focus::before {
-    background: red;
-  }
-
-  #youtube::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 20px;
-    left: 40px;
-    width: 45px;
-    height: 30px;
-    border: 15px solid transparent;
-    box-sizing: border-box;
-    border-left: 30px solid #ff8585;
-  }
-
-  #youtube:hover::after,
-  #youtube:focus::after {
-    border-left: 30px solid white;
-  }
-
-  #youtube span {
-    font-size: 0;
-    position: absolute;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-  }
-
-  #youtube:hover + #youtube-card {
-    display: block;
-    position: absolute;
-    bottom: 12px;
-    right: 10px;
-    padding: 25px 130px 25px 25px;
-    width: 300px;
-    background-color: white;
-  }
-} */
-
-
-
-    #ad {
-    float:right;
+    
+    #ipcatch {
+    width:875px;
+    height:500px;
+    
     
     
     }
-       #ipaddrr {
-        font-size:250px;
 
-
-       }
-
-       #Tittle {
-        margin-bottom: 50px;
-        
-
-
-       }
-
-    
-       #mouse {
-        font-family: 'Times New Roman', Times, serif;
-
-
-       }
-
-       #row-1 {
-        position: relative;
-        top: 9.5%;
-        left: 1%;
-        gap: 48px;
-        overflow-x: visible;
-        display: block;
-        justify-content: center;
-        display: flex;
-        flex-direction: row; /* Default value */
-        width: fit-content;
-}
-
-       /* #row-2 {
-        position: absolute;
-        top: 48%;
-        left: 0;
-        right: 0;
-        display: flex;
-        width: 100%;
-        height:  fit-content;
-        margin: 10px;
-        justify-content: center;
-        background-color: grey;
-        gap: 30px;
-        flex-direction: row;
-
-
-       } */
-
-       .allimg {
-        border-radius: 25px;
-        
-
-
-       }
-
-       .alllll {
-        
-
-
-       }
-
-       #row-2 {
-        position: relative;
-        top: 12%;
-        left: 1%;
-        gap: 48px;
-        justify-content: center;
-        display: flex;
-        flex-direction: row; /* Default value */
-        width: fit-content;
-}
-
-      #row-3 {
-        position: relative;
-        top: 20%;
-        left: 1%;
-        gap: 48px;
-        justify-content: center;
-        display: flex;
-        flex-direction: row; /* Default value */
-        width: fit-content;
-
-      }
-
-      #row-4 {
-        position: relative;
-        top: 28%;
-        left: 1%;
-        gap: 48px;
-        justify-content: center;
-        display: flex;
-        flex-direction: row; /* Default value */
-        width: fit-content;
-
-      }
-
-       
-
-
-
-       .gameicon{
-        border-radius: 25px;
-        width: 100px;
-        height: 100px;
-        overflow: hidden;
-       }
-
-       .gameicon:hover{
-        transition: 500ms;
-        transform: translate3D(0,-1px,0) scale(1.25);
-
-       }
-
-       .texta {
-        color: black;
-        font: medium;
-       }
-
-      .gameicon:hover .texta{
-        transition: 0.5s;
-        visibility: visible;
-        transform: translate3D(0,-1px,0) scale(1.25);
-
-      }
-
-       
-
-       #medium{
-        border-radius: 25px;
-        height: 200px;
-        width: 200px;
-
-
-       }
-/*start of w3*/
-      
-
-
-#row-top{
-  position: relative;
-  display: flex;
-  width: fit-content;
-  gap: 31.7px;
-  top: 6.7%;
-  flex-direction: row;
-  justify-content: center;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-
-
-
-
-
-}
-
-.bigicon {
-  border-radius: 25px;
-  width: 160px;
-  height: 160px;
-  gap: 30px;
-
-
-}
-
-.bigicon:hover {
-  transition: 500ms;
-  transform: translate3D(0,-1px,0) scale(1.25);
-
-
-
-}
-
-#smash {
-  border-radius: 25px;
-  width: 200px;
-  height: 150px;
-  gap: 30px;
-
-
-}
-
-#smash:hover {
-  transition: 500ms;
-  transform: translate3D(0,-1px,0) scale(1.25);
-
-
-
-}
-
-#texts {
-  position: relative;
-  top: 87px;
-  left: 20px;
-  font-size: 25px;
-  color: white;
-
-
-}
-#text-2 {
-  position: relative;
-  top: 215px;
-  left: 20px;
-  font-size: 25px;
-  color: white;
-
-
-}
-#texts--1 {
-  position: relative;
-  top: 60px;
-  left: 10px;
-  font-size: 32px;
-  color: white;
-
-}
-
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: rgb(7, 203, 220);
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
-
-#myBtn:hover {
-  background-color: #555;
-}
-
-/*e*/
-::-webkit-scrollbar{width:2px;height:2px;}
-::-webkit-scrollbar-button{width:2px;height:2px;}
-
-div{
-  box-sizing:border-box;
-}
-
-body {
-  background: #242424;
-}
-
-.horizontal-scroll-wrapper{
-  position:absolute;
-  display:block;
-  top:0;
-  left:0;
-  width:80px;
-  max-height:500px;
-  margin:0;
-  background:#abc;
-  overflow-y:auto;
-  overflow-x:hidden;
-  transform:rotate(-90deg) translateY(-80px);
-  transform-origin:right top;
-}
-.horizontal-scroll-wrapper > div{
-  display:block;
-  padding:5px;
-  background:#cab;
-  transform:rotate(90deg);
-  transform-origin: right top;
-}
-
-.squares{
-  padding:60px 0 0 0;
-}
-
-.squares > div{
-  width:60px;
-  height:60px;
-  margin:10px;
-}
-
-.rectangles{
-  top:100px;
-  padding:100px 0 0 0;
-}
-.rectangles > div{
-  width:140px;
-  height:60px;
-  margin:50px 10px;
-  padding:5px;
-  background:#cab;
-  transform:rotate(90deg) translateY(80px);
-  transform-origin: right top;
-}
-
-.sidenav {
+    .sidenav {
   height: 100%;
   width: 0;
   position: fixed;
@@ -1572,132 +1142,15 @@ body {
   padding: 16px;
 }
 
-#navbarbutton {
-    position:fixed;
-    right:30px;
-    top:0px;
-    height: 6.5%;
-    width: 3.4%;
-    object-fit: fill;
-    
-     
-    
-    }
+#iconn {
+  position:absolute;
+        top:1200px;
+        right:45%;
+        margin-right: 5px;
 
-#alllink {
-  font-size: 23px;
-  cursor: pointer;
 
 }
 
-/* .overlay {
-  position: absolute;
-  top: 0;
-  border-radius: 25px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 7%;
-  opacity: 0;
-  transition: 5s ease;
-  background-color: #008CBA;
-} */
-
-
-
-.texta {
-  color: rgb(180, 180, 180);
-  font-size: 10px;
-  position: relative;
-  top: -50px;
-  left: -4px;
-  visibility: hidden;
-  text-align: center;
-  
-
-  
-}
-
-a{
-  font-size: small;
-  text-decoration: none;
-}
-
-#footerr{
-  height: 15%;
-  background-color: #171616;
-  width: 100%;
-  position: absolute;
-  bottom:-30%;
-  text-align: center;
-  font-size: 100px;
-  gap: 10px;
-  color: white;
-}
-
-#texttopnav{
-  position: relative;
-  right: 37.5%;
-
-}
-
-#picture{
-  position: absolute;
-  right: 16.5%;
-  top: 20.1px;
-  height: 50px;
-  width: 2.5%;
-  
-
-}
-sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-#main {
-  transition: margin-right .5s;
-  padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-  
-
-  
 .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -1738,6 +1191,19 @@ sidenav {
         overflow-y: hidden;
       }
 
+      #list {
+        max-width: 100%;
+        display: grid;
+        height: 100%;
+        margin-left: 100px;
+        margin-top: 30px;
+        column-gap: 40px;
+        row-gap: 50px;
+        grid-template-columns: auto auto auto auto;
+        margin-right: 100px;
+        
+      }
+
       .nav-scroller .nav {
         display: flex;
         flex-wrap: nowrap;
@@ -1749,31 +1215,118 @@ sidenav {
         -webkit-overflow-scrolling: touch;
       }
 
-      #qwerty {
-        position: absolute;
-        top: 0;
-        width: 100%;
+      
+      
+
+    
+
+
+
+      @media only screen and (max-width: 1826px) {
+        /* styles for browsers larger than 960px; */
+        
+        #list {
+        max-width: 100%;
+        display: grid;
+        height: 100%;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 30px;
+        column-gap: 50px;
+        row-gap: 50px;
+        grid-template-columns: auto auto auto;
+        margin-right: 100px;
+        overflow-x: visible;
+    }
+    }
+
+    @media only screen and (max-width: 1354px) {
+        /* styles for browsers larger than 960px; */
+        
+        #list {
+        max-width: 100%;
+        display: grid;
+        height: 100%;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 30px;
+        column-gap: 50px;
+        row-gap: 50px;
+        grid-template-columns: auto auto;
+        margin-right: 100px;
+        overflow-x: visible;
+    }
+    }
+
+    @media only screen and (max-width: 902px) {
+      #list {
+        max-width: 100%;
+        display: grid;
         height: fit-content;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 30px;
+        column-gap: 3px;
+        row-gap: 50px;
+        grid-template-columns: auto;
+        margin-right: 100px;
+        overflow-x: visible;
       }
 
 
+    }
 
+
+
+
+
+      .game-list {
+        height:  560px;
+        width: 400px;
+        border: #ffffff solid 2px;
+        background-color:transparent;
+        border-radius: 25px;
+
+      }
+
+      .images{
+        position: relative;
+        right: -10%;
+        width: 80%;
+        height: 45%;
+      }
+
+      .titles-games {
+        font-size: x-large;
+        text-align: center;
+        color: white;
+
+      }
+
+      .description {
+        color: white;
+        margin-left: 30px;
+        margin-right: 30px;
+       margin-top: 10px;
+        font-size: large;
+        
+       
+
+
+      }
+      
 </style>
 
 
 
 
-
-<!-- <div class="topnav">
-  <div id="texttopnav">
-  <img id="picture" src="light.png">
+<!-- 
+<div class="topnav">
+ 
   <a href="index.html" id="light"class="items">Information4u</a>
-</div> -->
 
   
-
-
-        
+</div> -->
 
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
   <symbol id="bootstrap" viewBox="0 0 118 94">
@@ -1820,7 +1373,7 @@ sidenav {
             </a>
           </li>
           <li>
-            <a href="newgame.html" class="nav-link text-secondary">
+            <a href="newgame.html" class="nav-link text-white">
               <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#speedometer2"/></svg>
               Games
             </a>
@@ -1838,13 +1391,13 @@ sidenav {
             </a>
           </li>
           <li>
-            <a href="mywebsites.html" class="nav-link text-white">
+            <a href="mywebsites.html" class="nav-link text-secondary">
               <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#link"/></svg>
               My Websites
             </a>
           </li>
           <li>
-            <a href="aboutus-page.html" class="nav-link text-white">
+            <a href="information4u.net/home/" class="nav-link text-white">
               <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"/></svg>
               About Us
             </a>
@@ -1856,16 +1409,102 @@ sidenav {
 
   </div>
 </header>
-<!-- timead -->
+<h1 style="color: #ddd; text-align: center;">Unblocked Games</h1>
+<div id="list">
 
+  <a class="game-list" href="https://desmos-working123.supersmartguy.repl.co/uv/service/hvtrs8%2F-sjenlqhmci.ko-">
+    <p class="titles-games">Shellshockers</p>
+    <img class="images" src="shell.png">
+    <p class="description">ShellShockers is a first-person shooter game played in the browser, it is also known as Egg Battle Royale. </p>
+  </a>
+  <a class="game-list" href="https://desmos-working123.supersmartguy.repl.co/uv/service/hvtrs8%2F-dmggmkngr%2Csg%2F">
+    <p class="titles-games">Doge Miner</p>
+    <img class="images" src="doge.png">
+    <p class="description">Doge Miner is a popular incremental game in which players mine Dogecoins by clicking on a button and then use the coins to upgrade their mining equipment and other items to mine even more Dogecoins.</p>
+  </a>
+  <a class="game-list" href="https://desmos-working123.supersmartguy.repl.co/uv/service/hvtrs8%2F-soaqhiaptq.ko-">
+    <p class="titles-games">Smashkarts</p>
+    <img class="images" src="kart.png">
+    <p class="description">SmashKarts is a multiplayer kart racing game where players compete against each other in fast-paced and action-packed races, using power-ups and special abilities to gain an advantage over their opponents.</p>
+  </a>
+  <a class="game-list" href="https://FNAF1.supersmartguy.repl.co">
+    <p class="titles-games">FNAF 1</p>
+    <img class="images" src="unnamed.png">
+    <p class="description">Five Nights at Freddy's is a survival horror game where you take on the role of a security guard working the night shift at a children's pizza restaurant, and must use security cameras and limited power to survive against animatronic characters that are active at night.</p>
+  </a>
+  <a class="game-list" href="https://desmos-working123.supersmartguy.repl.co/uv/service/hvtrs8%2F-k%60heaoeq.aoo%2Feaoe-fkvg-liehvs%2Ffpefd%7Bs%2F2">
+    <p class="titles-games">FNAF 2</p>
+    <img class="images" src="unnamed (1).png">
+    <p class="description">Five Nights at Freddy's 2 (FNAF 2) is a survival horror game that is a sequel to the original Five Nights at Freddy's game. In this game, players take on the role of a security guard working the night shift at a restaurant where the animatronics have become even more dangerous and unpredictable, and must use a limited set of tools to survive against them.</p>
+  </a>
+  <a class="game-list" href="https://desmos-working123.supersmartguy.repl.co/uv/service/hvtrs8%2F-ecgnepcpadt%2Crw%2F">
+    <p class="titles-games">Minecraft (1.5.2-1.8.8)</p>
+    <img class="images" src="mine.jpeg">
+    <p class="description">Minecraft is a popular sandbox game that allows players to build and explore virtual worlds made out of blocks, and to use a variety of tools and resources to create structures, mine resources, and survive against monsters that come out at night.</p>
+  </a>
+  <a class="game-list" href="https://desmos-working123.supersmartguy.repl.co/uv/service/hvtrs8%2F-snoreeaoe%2Cim%2F">
+    <p class="titles-games">Slope</p>
+    <img class="images" src="OIP (5).jpg">
+    <p class="description">Slope is a fast-paced and challenging game where players control a ball as it moves down an endless slope, dodging obstacles and collecting points along the way, while also trying to reach the highest score possible.</p>
+  </a><a class="game-list" href="https://desmos-working123.supersmartguy.repl.co/uv/service/hvtrs8%2F-hmlg-ko%2Ccmm-">
+    <p class="titles-games">Hole.io</p>
+    <img class="images" src="Hole.io_logo.png">
+    <p class="description">Hole.io is a multiplayer online game where players control a black hole and try to swallow as many objects on the map as possible, including buildings, cars, and other players' black holes, while competing to become the biggest black hole on the map.</p>
+  </a>
+  <a class="game-list" href="https://desmos-working123.supersmartguy.repl.co/uv/service/hvtrs8%2F-pmkk.aoo%2Fgn-g-rgtpo%2Fbmwn">
+    <p class="titles-games">Retro Bowl</p>
+    <img class="images" src="download.png">
+    <p class="description">Retro Bowl is a mobile and PC American Football arcade game where players take control of a team, leading them to the Retro Bowl championship through a series of matches, while managing the team's strategies, signing new players, and upgrading facilities.</p>
+  </a>
+  <a class="game-list" href="https://desmos-working123.supersmartguy.repl.co/uv/service/hvtrs8%2F-pcpgr%2Fim.aoo%2F">
+    <p class="titles-games">Paper.io</p>
+    <img class="images" src="paper.jpg">
+    <p class="description">Paper.io is a multiplayer online game where players control a colored square, moving it around the map to claim as much territory as possible, while also trying to avoid running into other players' squares or the edges of the map, and competing to become the player with the most territory.</p>
+  </a><a class="game-list" href="https://desmos-working123.supersmartguy.repl.co/uv/service/hvtrs8%2F-bcsievbpoq.ko-">
+    <p class="titles-games">Basket Bros</p>
+    <img class="images" src="basket-removebg-preview.png">
+    <p class="description">Basket Bros is a mobile basketball game where players control a team of basketball players, competing against other teams in fast-paced and action-packed matches, using a variety of moves and special abilities to outsmart and outplay their opponents and become the champion.</p>
+  </a>
+  <a class="game-list" href="https://desmos-working123.supersmartguy.repl.co/uv/service/hvtrs8%2F-nmw%2Cge%2Frlcy-rmbnoz-aoppmrctkol%2F7369-rmbnoz">
+    <p class="titles-games">Roblox</p>
+    <img class="images" src="roblox.jpg">
+    <p class="description">Roblox is a massively multiplayer online game platform that allows users to create and play games, as well as interact with other players.</p>
+  </a>
 
+  
+  
+</div>
+    <!-- <a id="Title" href="games-page.html">Utilites Center</a>
+    <a href="aboutus-page.html" id="about" class="items"  ><b ></b></a>
+  <a href="games-page.html" id="game" class="items"><b></b></a>
+   <b><a href="util-center.html" id="util"  class="items"><b></b></a></b> -->
+        
+        <!-- <div id="games-icons" >
+                <div class="games-buttons" id="snake-icon">
+                    <p>IP Catcher</p>
+                    <a href="ipcatcher.html"><img src="smallipcatch.png" width="150px" height="100px"></a>
+                    <p width="100px">Snake is a classic in the game industry! To gain points you move your snake to collect sqaures.Earn points and try to beat your high score.</p>
+            </div>
+            
+            <div class="games-buttons" id="two-icon" ><p>Time</p>
+            <a href="time-page.html"><img src="smalltime.png" width="160px" height="80px"></a>               <p width="100px">2048 is a great game to pass time and exercise your mind. You can score points by merging cubes.</p>
+            </div>
+            
+            
+                <div class="games-buttons" id="cookie-icon"><p>Weather</p>
+                   <a href="weather.html"> <img  src="weather.png" width="100px" height="100px"></a>
+        </div>
+            
+             <div class="games-buttons" id="crypto-icon" ><p>Live Crypto Price</p>
+            <a href="crypto.html"><img src="smalltime.png" width="160px" height="80px"></a>               <p width="100px">Crypto is a great game to pass time and exercise your mind. You can score points by merging cubes.</p>
+            </div>
 
+            <div class="games-buttons" id="iconn" ><p>Video Player</p>
+              <a href="ytemulator.html"><img src="yt.png" width="160px" height="80px"></a>               <p width="100px">Crypto is a great game to pass time and exercise your mind. You can score points by merging cubes.</p>
+              </div> -->
+
+            
     
-    <!-- <a href="aboutus-page.html" id="about" class="items"><b>About Us</b></a>
-  <a href="games-page.html" id="game" class="items"><b>Games</b></a>
-   <a href="util-center.html" id="util"  class="items"><b>Utilities</b></a> -->
-        
-        
        
         
        
@@ -1873,306 +1512,115 @@ sidenav {
         <div id="copyright">© Information4u.net</div>
         
        
-        <!-- <img id="navbarbutton" src="navbarbutton.png"></img> -->
-                  
         
-        <div id="texts--1">Recommended</div>
-                  
-                   <div id="row-top" class="" >
-                    
-                    
-                        <div class="bigicon"><a href="fnf.html"><div id="1a"><img src="fnf.jpeg" width="160px" height="160px" class="allimg"></div></a></div>
-                        <div class="bigicon"><a href="two-page.html"><img src="2048.png" width="150px" height="150px" class="allimg"></a></div>
-                        <div class="bigicon"><a href="car.html"><img src="helix.png" width="160px" height="160px" class="allimg"></a></div>
-                        <div id="smash"><a href="kart.html"><img src="kart.png" width="200px" height="150px" class="allimg"></a></div>
-                        <div class="bigicon"><a href="chess.html"><img src="chess-piece-clip-art-13.png" width="160px" height="160px" class="allimg"></a></div>
-                        <div class="bigicon"><a href="https://unblocker-pandacoder123.koyeb.app/service/hvtrs8%2F-wuw%2Cecgnepcpadt%2Crw%2F"><img src="mine.jpeg" width="160px" height="160px" class="allimg"></a></div>
-                        <div class="bigicon"><a href="paper.html"><img src="paper.jpg" width="160px" height="160px" class="allimg"></a></div>
-                        <div class="bigicon"><a href="slope.html"><img src="OIP (5).jpg" width="160px" height="160px" class="allimg"></a></div>
-                        <!-- start of test -->
+        <!-- <span style="font-size:01px;cursor:pointer" id="butt" onclick="openNav()">&#9776; <img id="navbarbutton" src="navbarbutton.png"></img> </span>
 
-                        <div class="bigicon"><a href="agar.html"><img src="shell.png" width="160px" height="160px" class="allimg"></a></div>
-                        <div class="bigicon"><a href="hole.html"><img src="Hole.io_logo.png" width="150px" height="150px" class="allimg"></a></div>
-                        
-                        
-                          
-                        
-                        </div>
-                        </div>
-
-
-                        <div id="texts">🔥Hot Games</div>
-
-                   
-          
-                     <div id="row-1"> 
-                        
-                        <div class="gameicon"><a href="hole.html"><img src="Hole.io_logo.png" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="hole.html">Hole.io</a></div></div></div>
-                        <div class="gameicon"><a href="car.html"><img src="helix.png" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="car.html">Helix Jump</a></div></div></div>
-                        <div class="gameicon"><a href="slope.html"><img src="OIP (5).jpg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="slope.html">Slope</a></div></div></div>
-                        <div class="gameicon"><a href="fnf.html"><img src="fnf.jpeg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="fnf.html">FNF</a></div></div></div>
-                        <div class="gameicon"><a href="clicker.html"><img src="cookie2.png" width="100px" height="100px" class="allimg"><div class="overlay"><div class="texta"><a href="clicker.html">Cookie Clicker</a></div></div></a></div>
-                        <div class="gameicon"><a href="snake-page.html"><img src="snakeimg.png" width="120px" height="100px" class="allimg"><div class="overlay"><div class="texta"><a href="snake-page.html">Snake</a></div></div></a></div>
-                        <div class="gameicon" ><a href="https://unblocker-pandacoder123.koyeb.app/service/hvtrs8%2F-ecgnepcpadt%2Crw%2F"><img src="mine.jpeg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta" ><a href="https://unblocker-pandacoder123.koyeb.app/service/hvtrs8%2F-wuw%2Cecgnepcpadt%2Crw%2F">Minecraft</a></div></div></div>
-                        <div class="gameicon"><a href="kart.html"><img src="kart.png" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="kart.html">Smash Karts</a></div></div></div>
-                        <div class="gameicon"><a href="chess.html"><img src="chess-piece-clip-art-13.png" width="90px" height="90px" class="allimg"></a><div class="overlay"><div class="texta"><a href="chess.html">Chess</a></div></div></div>
-                        <div class="gameicon"><a href="paper.html"><img src="paper.jpg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="paper.html">Paper.io</a></div></div></div>
-                        <!-- e -->
-                        <div class="gameicon"><a href="kart.html"><img src="kart.png" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="kart.html">Smash Karts</a></div></div></div>
-                        <div class="gameicon"><a href="chess.html"><img src="chess-piece-clip-art-13.png" width="90px" height="90px" class="allimg"></a><div class="overlay"><div class="texta"><a href="chess.html">Chess</a></div></div></div>
-                        <div class="gameicon"><a href="paper.html"><img src="paper.jpg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="paper.html">Paper.io</a></div></div></div>
-                        
-
-                     </div>
-
-                     <div id="text-2">hi</div>
-                     
-
-                     <div id="row-2">
-                      <div class="gameicon"><a href="fnf.html"><img src="fnf.jpeg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="fnf.html">FNF</a></div></div></div>
-                      <div class="gameicon"><a href="two-page.html"><img src="2048.png" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="two-page.html">2048</a></div></div></div>
-                      <div class="gameicon"><a href="car.html"><img src="helix.png" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="car.html">Helix Jump</a></div></div></div>
-                      <div class="gameicon"><a href="clicker.html"><img src="cookie2.png" width="100px" height="100px" class="allimg"><div class="overlay"><div class="texta"><a href="clicker.html">Cookie Clicker</a></div></div></a></div>
-                      <div class="gameicon"><a href="snake-page.html"><img src="snakeimg.png" width="120px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="snake.html">Snake</a></div></div></div>
-                      <div class="gameicon"><a href="kart.html"><img src="kart.png" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="kart.html">Smash Karts</a></div></div></div>
-                      <div class="gameicon"><a href="slope.html"><img src="OIP (5).jpg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="slope.html">Slope</a></div></div></div>
-                      <div class="gameicon"><a href="chess.html"><img src="chess-piece-clip-art-13.png" width="90px" height="90px" class="allimg"></a><div class="overlay"><div class="texta"><a href="chess.html">Chess</a></div></div></div>
-                      <div class="gameicon" ><a href="https://unblocker-pandacoder123.koyeb.app/service/hvtrs8%2F-ecgnepcpadt%2Crw%2F"><img src="mine.jpeg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta" ><a href="https://unblocker-pandacoder123.koyeb.app/service/hvtrs8%2F-wuw%2Cecgnepcpadt%2Crw%2F">Minecraft</a></div></div></div>
-                      <div class="gameicon"><a href="paper.html"><img src="paper.jpg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="paper.html">Paper.io</a></div></div></div>
-                      <!-- start of test -->
-                      <div class="gameicon" ><a href="https://unblocker-pandacoder123.koyeb.app/service/hvtrs8%2F-ecgnepcpadt%2Crw%2F"><img src="mine.jpeg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="https://unblocker-pandacoder123.koyeb.app/service/hvtrs8%2F-wuw%2Cecgnepcpadt%2Crw%2F">Minecraft</a></div></div></div>
-                      <div class="gameicon"><a href="kart.html"><img src="kart.png" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="kart.html">Smash Karts</a></div></div></div>
-                      <div class="gameicon"><a href="chess.html"><img src="chess-piece-clip-art-13.png" width="90px" height="90px" class="allimg"></a><div class="overlay"><div class="texta"><a href="chess.html">Chess</a></div></div></div>
-                        
-
-
-                   </div>
-
-                   <div id="row-3">
-                    <div class="gameicon"><a href="doge.html"><img src="doge.png" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="doge.html">Doge Miner</a></div></div></div>
-                    <div class="gameicon"><a href="drift.html"><img src="drift.png" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="drift.html">Drift Hunters</a></div></div></div>
-                    <div class="gameicon"><a href="basket.html"><img src="basket-removebg-preview.png" width="105px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="basket.html">Basket Bros</a></div></div></div>
-                    <div class="gameicon"><a href="tap.html"><img src="https://images.crazygames.com/tapbasketball-cover?auto=format,compress&q=45&cs=strip&ch=DPR&w=178&h=100&fit=crop" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="tap.html">Tap Basket</a></div></div></div>
-                    <div class="gameicon"><a href="crazyroll.html"><img src="https://images.crazygames.com/games/tap-tap-shots/cover-1655202548222.png?auto=format,compress&q=45&cs=strip&ch=DPR&w=178&h=100&fit=crop" width="120px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="taptap.html">Tap-Tap Shots</a></div></div></div>
-                    <div class="gameicon"><a href="madalincars.html"><img src="Car-Simulator-2018-logo-1024x768.png" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="madalincars.html">Unbounded</a></div></div></div>
-                    <div class="gameicon"><a href="chess.html"><img src="chess-piece-clip-art-13.png" width="90px" height="90px" class="allimg"></a><div class="overlay"><div class="texta"><a href="chess.html">Chess</a></div></div></div>
-                    <div class="gameicon"><a href="slope.html"><img src="OIP (5).jpg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="slope.html">Slope</a></div></div></div>
-                    <div class="gameicon" ><a href="https://unblocker-pandacoder123.koyeb.app/service/hvtrs8%2F-ecgnepcpadt%2Crw%2F"><img src="roblox.jpg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="roblox.html">Roblox</a></div></div></div>
-                    <div class="gameicon"><a href="paper.html"><img src="paper.jpg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="paper.html">Paper.io</a></div></div></div>
-                    <!-- start of test -->
-                    <div class="gameicon" ><a href="https://unblocker-pandacoder123.koyeb.app/service/hvtrs8%2F-ecgnepcpadt%2Crw%2F"><img src="mine.jpeg" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="https://unblocker-pandacoder123.koyeb.app/service/hvtrs8%2F-wuw%2Cecgnepcpadt%2Crw%2F">Minecraft</a></div></div></div>
-                    <div class="gameicon"><a href="roll.html"><img src="check.png" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="roll.html">Teacher Simulator</a></div></div></div>
-                    <div class="gameicon"><a href="evo.html"><img src="evo.png" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="evo.html">Evo World</a></div></div></div>
-
-
-                      
-
-
-                 </div>
-
-                 <div id="row-4">
-                  <div class="gameicon"><a href="derby.html"><img src="https://images.crazygames.com/games/derby-crash-4/cover-1656950450071.png?auto=format,compress&q=45&cs=strip&ch=DPR&w=178&h=100&fit=crop" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="derby.html">Derby Crash 4</a></div></div></div>
-                  <div class="gameicon"><a href="crazydrift.html"><img src="https://images.crazygames.com/games/crazy-drift/cover-1655409764442.png?auto=format,compress&q=45&cs=strip&ch=DPR&w=178&h=100&fit=crop" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="crazydrift.html">Crazy Drift</a></div></div></div>
-                  <div class="gameicon"><a href="marketboss.html"><img src="https://images.crazygames.com/market-boss/20220523115722/market-boss-cover?auto=format,compress&q=45&cs=strip&ch=DPR&w=178&h=100&fit=crop" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="marketboss.html">Marketing</a></div></div></div>
-                  <div class="gameicon"><a href="layerroll.html"><img src="https://images.crazygames.com/layers-roll/20220822155054/layers-roll-cover?auto=format,compress&q=45&cs=strip&ch=DPR&w=178&h=100&fit=crop" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="stack.html">Stacky Bird</a></div></div></div>
-                  <div class="gameicon"><a href="stack.html"><img src="https://images.crazygames.com/stacky-bird/20220608163046/stacky-bird-cover?auto=format,compress&q=45&cs=strip&ch=DPR&w=178&h=100&fit=crop" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="taptap.html">Tap-Tap Shots</a></div></div></div>
-                  <div class="gameicon"><a href="retrobattle.html"><img src="https://images.crazygames.com/retro-battle/20220624120612/retro-battle-cover?auto=format,compress&q=45&cs=strip&ch=DPR&w=178&h=100&fit=crop" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="retrobattle.html">Retro Battles</a></div></div></div>
-                  <div class="gameicon"><a href="watersort.html"><img src="https://images.crazygames.com/cups---water-sort-puzzle/20220523133345/cups---water-sort-puzzle-cover?auto=format,compress&q=45&cs=strip&ch=DPR&w=178&h=100&fit=crop" width="90px" height="90px" class="allimg"></a><div class="overlay"><div class="texta"><a href="watersort.html">Water Sort</a></div></div></div>
-                  <div class="gameicon"><a href="computer.html"><img src="https://images.crazygames.com/computer-repair/20220804184139/computer-repair-cover?auto=format,compress&q=45&cs=strip&ch=DPR&w=178&h=100&fit=crop" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="computer.html">Computer Repair</a></div></div></div>
-                  <div class="gameicon" ><a href="hidenseek.html"><img src="https://images.crazygames.com/hide-n-seek/20220216140400/hide-n-seek-cover?auto=format,compress&q=45&cs=strip&ch=DPR&w=178&h=100&fit=crop" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="hidenseek.html">Hide N Seek</a></div></div></div>
-                  <div class="gameicon"><a href="house.html"><img src="https://images.crazygames.com/house-of-hazards/20200910082214/house-of-hazards-cover?auto=format,compress&q=45&cs=strip&ch=DPR&w=178&h=100&fit=crop" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="house.html">House of Hazards</a></div></div></div>
-                  <!-- start of test -->
-                  <div class="gameicon" ><a href="ships3d.html"><img src="https://images.crazygames.com/games/ships-3d/cover-1656950535291.png?auto=format,compress&q=45&cs=strip&ch=DPR&w=178&h=100&fit=crop" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="ships3d.html">Ships3D</a></div></div></div>
-                  <div class="gameicon"><a href="airshipstickman.html"><img src="https://images.crazygames.com/games/infiltrating-the-airship/cover-1657131592753.png?auto=format,compress&q=45&cs=strip&ch=DPR&w=178&h=100&fit=crop" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="airshipstickman.html">Infiltrating Airship</a></div></div></div>
-                  <div class="gameicon"><a href="oneline.html"><img src="https://images.crazygames.com/oneline/20220905160742/oneline-cover?auto=format,compress&q=45&cs=strip&ch=DPR&w=178&h=100&fit=crop" width="100px" height="100px" class="allimg"></a><div class="overlay"><div class="texta"><a href="oneline.html">Oneline</a></div></div></div>
-
-
-                    
-
-
-               </div>
-
-               <div id="footerr"><a href="util-center.html">Utilites</a>  <a href="newgame.html">Games</a>  <a href="aboutus-page.html">About Us</a>  <a href="lookup2.html">AnySearch</a></div>
-
-                   <!-- <span style="font-size:01px;cursor:pointer" id="butt" onclick="openNav()">&#9776; <img id="navbarbutton" src="navbarbutton.png"></img> </span> -->
-
-        <!-- <div id="mySidenav" class="sidenav">
+        <div id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          
-          <a id="alllink" href="newgame.html">🎮 Games</a>
+          <a class="alllink" href="newgame.html">Games</a>
   
              
-                <a id="alllink" href="util-center.html">	&#x26C5; Utilities</a>
-              
-              
-              
-                
-              
-  
-              
-                <a id="alllink" href="aboutus-page.html">❔About</a>
+          <a class="alllink" href="util-center.html">Utilities</a>
+        
+        
+        
+          
+        
 
-                <a id="alllink" href="lookup2.html">🔎 AnySearch</a>
+        
+          <a class="alllink" href="aboutus-page.html">About</a>
 
-                <a id="alllink" href="mailto:kcat41703@gmail.com">📧 Contact</a>
+          <a class="alllink" href="lookup2.html">AnySearch</a>
 
-                <a id="">------------------</a>
-
-                <a id="alllink">🏀 Basketball</a>
-
-                <a id="alllink">🚗 Car Games</a>
-
-                <a id="alllink">.io</a>
-
-                <a id="alllink">⛏️ Minecraft</a>
-
-                <a id="alllink">🔫 FPS</a>
-
-                <a id="alllink">🖱️ Clicker</a>
-
-                <a id="alllink">👥 Mulitiplayer</a>
-
-                <a id="alllink">🏃 Stickman</a>
-
-
-
-                
-
-
-                
+          <a class="alllink" href="mailto:kcat41703@gmail.com">Contact</a> -->
+        </div>
+        <!-- <div id="main">
+          <h2>Sidenav Push Example</h2>
+          <p>Click on the element below to open the side navigation menu, and push this content to the right. Notice that we add a black see-through background-color to body when the sidenav is opened.</p>
+          
         </div> -->
-
-        <!--Footer--> 
-
-<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
-                   <!--  -->
-
-                   <!-- <script>
-                    
-
-
-
-
-                    function openNav() {
-                      document.getElementById("mySidenav").style.width = "250px";
-                      document.getElementById("main").style.marginRight = "250px";
-                      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-                    }
-                    
-                    function closeNav() {
-                      document.getElementById("mySidenav").style.width = "0";
-                      document.getElementById("main").style.marginRight= "0";
-                      document.body.style.backgroundColor = "white";
-                    }
-                    </script>
-                   <script>
-                    //Get the button
-                    var mybutton = document.getElementById("myBtn");
-                    
-                    // When the user scrolls down 20px from the top of the document, show the button
-                    window.onscroll = function() {scrollFunction()};
-                    
-                    function scrollFunction() {
-                      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                        mybutton.style.display = "block";
-                      } else {
-                        mybutton.style.display = "none";
-                      }
-                    }
-                    
-                    // When the user clicks on the button, scroll to the top of the document
-                    function topFunction() {
-                      document.body.scrollTop = 0;
-                      document.documentElement.scrollTop = 0;
-                    }
+        
+        
+        <!-- <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginRight = "250px";
+          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginRight= "0";
+          document.body.style.backgroundColor = "white";
+        }
+        </script>
 
 
-                    // duration of scroll animation
-var scrollDuration = 300;
-// paddles
-var leftPaddle = document.getElementsByClassName('left-paddle');
-var rightPaddle = document.getElementsByClassName('right-paddle');
-// get items dimensions
-var itemsLength = $('.item').length;
-var itemSize = $('.item').outerWidth(true);
-// get some relevant size for the paddle triggering point
-var paddleMargin = 20;
 
-// get wrapper width
-var getMenuWrapperSize = function() {
-	return $('.menu-wrapper').outerWidth();
-}
-var menuWrapperSize = getMenuWrapperSize();
-// the wrapper is responsive
-$(window).on('resize', function() {
-	menuWrapperSize = getMenuWrapperSize();
-});
-// size of the visible part of the menu is equal as the wrapper size 
-var menuVisibleSize = menuWrapperSize;
 
-// get total width of all menu items
-var getMenuSize = function() {
-	return itemsLength * itemSize;
-};
-var menuSize = getMenuSize();
-// get how much of menu is invisible
-var menuInvisibleSize = menuSize - menuWrapperSize;
 
-// get how much have we scrolled to the left
-var getMenuPosition = function() {
-	return $('.menu').scrollLeft();
-};
+        <div class="slideshow-container">
 
-// finally, what happens when we are actually scrolling the menu
-$('.menu').on('scroll', function() {
+          <a href="snake-page.html"><div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="ipcatchh.png" class="imd" id="ipcatch" >
+            <h2 class="text"></h2>
+              </div></a>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="2048header.jpg" class="imd" id="snakeimg">
+            <div class="text"></div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="sand.png" style="width:100%">
+            <div class="text">Caption Three</div>
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+          </div>
+          
+</div>
+<br>
 
-	// get how much of menu is invisible
-	menuInvisibleSize = menuSize - menuWrapperSize;
-	// get how much have we scrolled so far
-	var menuPosition = getMenuPosition();
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
 
-	var menuEndOffset = menuInvisibleSize - paddleMargin;
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
 
-	// show & hide the paddles 
-	// depending on scroll position
-	if (menuPosition <= paddleMargin) {
-		$(leftPaddle).addClass('hidden');
-		$(rightPaddle).removeClass('hidden');
-	} else if (menuPosition < menuEndOffset) {
-		// show both paddles in the middle
-		$(leftPaddle).removeClass('hidden');
-		$(rightPaddle).removeClass('hidden');
-	} else if (menuPosition >= menuEndOffset) {
-		$(leftPaddle).removeClass('hidden');
-		$(rightPaddle).addClass('hidden');
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
-	// print important values
-	$('#print-wrapper-size span').text(menuWrapperSize);
-	$('#print-menu-size span').text(menuSize);
-	$('#print-menu-invisible-size span').text(menuInvisibleSize);
-	$('#print-menu-position span').text(menuPosition);
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-});
-
-// scroll to left
-$(rightPaddle).on('click', function() {
-	$('.menu').animate( { scrollLeft: menuInvisibleSize}, scrollDuration);
-});
-
-// scroll to right
-$(leftPaddle).on('click', function() {
-	$('.menu').animate( { scrollLeft: '0' }, scrollDuration);
-});
-                    </script>
-                    
-                       -->
-                   
-
-
-
-
-       
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script> -->
 
 
         
