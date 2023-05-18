@@ -1,8 +1,8 @@
 # About Me :
 <h1 align="center">Hi, I'm pandacoder⌨</h1>
-<h3 align="center">I am a 13y year old Front End Developer</h3>
+<h3 align="center">I am a Front End Developer</h3>
 
-- 💻 Find out more about me at [https://vulcanwm.is-a.dev](https://vulcanwm.is-a.dev)
+- 💻 Find out more about me at (https://information4u.net)
 
 - 🖥️ My main coding languages are **HTML, Javascript, CSS, Python, and Mongodb**
 
